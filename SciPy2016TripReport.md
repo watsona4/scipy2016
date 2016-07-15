@@ -1192,7 +1192,38 @@ Technology-Kharagpur)
 > to change how you work. We hope to make the experience of
 > collaborating on notebooks less painful and more fun.
 
--
+- notebooks contain prose, input, and many types of output
+- under the hood, notebooks are just JSON files
+- this stores all information necessary to reconstruct the document
+- humans should be looking at rendered notebooks, not the JSON
+- images are stored as base-64 blobs
+- diffs are readable, but can be unwieldy
+- this is very hard to use with git
+- github now has notebook rendering!, but not for diffs
+- difftools view test files as simply lines and have no understanding
+  of the file's ontent
+- can currently use nbconvert to convert to md, which is better, but
+  it discards all output
+- also many other ways to currenlt diff (ipymd, notedown,
+  jsondiffpatch)
+- talked about algorihms (Longest Common Subsequence) to compute
+  smallest meaningful differences
+- lots of heuristics involved in computing simlarities between text,
+  not simply differences in lines or differences between lines
+- NoteBook DIff and MErge
+- diffs and mweges notebooks, including command line diffs and html
+  rendering of diffs
+- git integration is a primary focus of work
+- `nbdiff` for terminal, `nbdiff-web` for html, and `git-nbdiffdriver`
+  for git command line (consistent with git standards to difftools)
+- demoed each tool
+- Merging is not yet complete
+- `nbmergedriver` will let git automerge conflicts in notebooks (not json
+  if treated as text!), but webapp for interactive merge is yet t
+  ocome
+- will eventually splt output into a different file for
+  gitignore-ability
+- once html view is good, will talk to github
 
 ### Lightning Talks (youtube)
 
