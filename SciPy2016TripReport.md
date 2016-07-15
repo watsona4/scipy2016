@@ -631,14 +631,18 @@ working hard to add R-like capabilities to Python.
 > generation is used by libraries such as PyDy, chemreac, and
 > sympybotics.
 
-- SymPy does symbolic mathematics in Python (like Mathematica)
-- In Jupyter returns the mathematical form
-- Can generate code expressions in C and Fortran (like Mathamatica
-  CForm), many other languages as well (Python and Cython included)
-- Enables mathematical optimizations that a compler may not know how
-  to do
-- Shows examples of decay using bateman equations for three species,
-  and n-body pendulum on a cart
+SymPy is a Python package that does symbolic mathematics, similar to
+*Mathematica*. When used in upyter notebooks, SymPy results are
+returned as MathJax (or $\LaTeX$) output, displaying the result in
+purely symbolic form. The presented showed a new capability of
+exporting symbolic math as source code (similar to `CForm` in
+*Mathematica*). This capability allows for mathematical optimizations
+in addition to compiler optmizations. At ths time, these matematical
+optimizations are limited to reducing the number of operations, and
+not yet extended to more complex optimizations. The presenter
+demonstrated this by symbolically solving a simple decay chain
+problem, and a complex n-body pendulum problem. He then inverted the
+pendulum problem to show dynamic control of the pendulum.
 
 ### Integrating Scripting into Commercial Applications \[Case Studies in Industry\]
 
