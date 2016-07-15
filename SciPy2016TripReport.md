@@ -1181,6 +1181,24 @@ Conclusions
 ===========
 
 - Can we open-source Lynx?
+  - Separate subpackages based on capabilities (i.e., configuration
+    system, materials, mesh, and coupling; keep nuclear internal?)
+  - Extract classified and sensitive (i.e., export controlled) code
+    out of system (TRANSX and Bengal)
+  - Have internal repo as primary; periodically (patch releases?) push
+    updates to Github. Fetch updates from Github whenever a pull
+    request is approved, or daily.
+  - Justification: collaboration among peers at other labs, easier
+    integration with other scientific packages, presentation to
+    outside community and usage by students and others
+  - Free developer resource
+  - Still able to maintain quality and configuration control
+  - Contributions possible remotely by NNL Lynx developers
+  - Concerns:
+	- Classification: review of all code by ADC before release
+	- Information Security: blanket PU approval with manager signoff?
+	- Legal/Licensing: ??? (talk to lawyer)
+	- Others?
 - Convert to Anaconda for management of software stack
 - All presentations are available on
   [Enthought's YouTube channel](https://www.youtube.com/playlist?list=PLYx7XA2nY5Gf37zYZMw6OqGFRPjB1jCy6).
