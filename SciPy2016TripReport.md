@@ -200,13 +200,49 @@ as well). He also showed how Loopy can predict the optimal runtime and
 memory usage for the hardware. At this time, Loopy supports generation
 of OpenCL, CUDA, Intel Xeon Phi, and Numba code.
 
-Keynote \#3: ???
-----------------
+Keynote \#3: Machine Learning for Social Science
+------------------------------------------------
 
 (Hanna Wallach, Microsoft Research NYC and Adjunct Associate
 Professor, UMass Amherst)
 
-Notes
+The speaker is a social computer scientist who started programming
+using MATLAB, then switched to C/C++ and Java, but ended up in Python
+because it made programming much easer and less time consuming. She
+started looking at using machine learning to analyze complex social
+science problems. The speaker separates data analysis into two
+categories: prediction (computer scientists) and explanation (social
+scientists). These different goals lead to different analysis
+approaches, which can many times conflict because prediction is
+concerned about accuracy, which results in very complex models, while
+explanation aims to understand connections between causes, which a
+complicated model cannot allow. The speaker has been working on
+measurement modeling, which can reconcile these conflicts
+
+The speaker presented two examples of the use of measurement
+modeling. The first example was analyzing declassified government
+documents. She walked though the algorithm used (Poisson
+decomposition) to analyze document word count and classify documents
+according to their topics. The algorithm was written in only six lines
+of Python code. Her analysis discovered temporal trends in global
+events and in classification and declassification of documents, as
+well as the department from which the document originated.
+
+The second example dealt with international relations. Historically,
+political scientists manually created databases of international
+events, which were used to study international relationships. These
+databases are time consuming to contruct, and therefore very
+restrictive. Recently, machine learning has been used to automate
+collection and categorization of all this data. She used a similar
+algorithm as above, but this time decomposing n-dimensional tensors to
+analyze tensors of relationships. This extends the approach to
+discover multilateral relations to determine *who* did *what* to
+*whom*, *when*. She found the results simple enough for even
+non-experts to consume and understand. The speaker posits that the
+Poisson decomposition method is very useful for analyzing count data,
+but cautions that social computer scientists must be careful with
+ethical concerns that may be raised by "unbiased" models that
+reinforce biases in society.
 
 Wednesday Sessions
 ------------------
