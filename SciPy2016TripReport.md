@@ -590,14 +590,15 @@ explore the other types of things the community does, they have
 realized that there are more needs for distributed computing. Under
 the hood, Dask uses a scheduler and a task graph to interact with and
 assign tasks to nodes. The developers have written a thin API to
-expose the scheduler and task graph to users. Additionally, they have
-written a distributed scheduler to interact with large HPC
-machines. This scheduler decomposes the task graph and assigns chunks
-of the graph to machines as they are available. With this approach,
-the scheduler is able to add workers or graphs at any time during
-execution, and knows how to re-create data so it can recover from
-losing a worker as well. Dask also provides a web interface for
-monitoring the job remotely as it proceeds.
+expose the scheduler and task graph to users. Additionally, in
+addition to schedulers for synchronous, multithread, and multiprocess
+tasks, they have written a distributed scheduler to interact with
+large HPC machines. This scheduler decomposes the task graph and
+assigns chunks of the graph to machines as they are available. With
+this approach, the scheduler is able to add workers or graphs at any
+time during execution, and knows how to re-create data so it can
+recover from losing a worker as well. Dask also provides a web
+interface for monitoring the job remotely as it proceeds.
 
 The presenter demonstrated a new class called `Delayed`, which is a
 lazy object that only executes its tasks when its `compute()` method
