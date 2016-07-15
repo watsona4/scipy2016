@@ -548,27 +548,32 @@ along with the attendees’ comments.
 > distributed computing. We discuss recent results in machine learning
 > and novel scientific applications.*
 
-- Dask provides parallelixation of NumPy and Pandas
-- Interactive presentation at http://scipy2016.jupyter.org
-- Web UI shows dynamic live monitoring of job during execution
-- Dask originally designed to parallelize numpy and pandas, but now
-  theyre looking at other things the community does
-- Under the hood dask uses a checuler and graph to coordinate
-  computations
-- They have now written a thin api to expose the schduler and graph
-  specification for other things
-- They have also written a distributed scheduler for large machines
-- Showed *delayed* class
-  - Simple interface (one function)
-  - Can visualize graph of computations
-  - Lazy object, only computes later when .compute() called
-- Distributed scheduler is dala-local aware
-- Asynchronous communication with client
-- Robust to support losing a machine or adding workers at any time
-- Uses tornado under the hood; interface is similar to lynx broker,
-  scheduler framework
-- Machine learning: dklearn intended to distribute sklearn tasks
-- Continuum analytics
+The Dask package was originally designed to distribute Numpy and
+Pandas calculations across a cluster of nodes, but as the developers
+explore the other types of things the community does, they have
+realized that there are more needs for distributed computing. Under
+the hood, Dask uses a scheduler and a task graph to interact with and
+assign tasks to nodes. The developers have written a thin API to
+expose the scheduler and task graph to users. Additionally, they have
+written a distributed scheduler to interact with large HPC
+machines. This scheduler decomposes the task graph and assigns chunks
+of the graph to machines as they are available. With this approach,
+the scheduler is able to add workers or graphs at any time during
+execution, and knows how to re-create data so it can recover from
+losing a worker as well. Dask also provides a web interface for
+monitoring the job remotely as it proceeds.
+
+The presenter demonstrated a new class called `Delayed`, which is a
+lazy object that only executes its tasks when its `compute()` method
+is called. This object is useful for inspecting the task graph and
+asynchronously defining tasks and graphs. Additionally, he showed the
+`dklearn` module, which is a Dask-aware wrapper of the scikit-learn
+package for distributed machine learning.
+
+The Dask package looks very similar to the eventual goal of the Lynx
+task scheduler, and may be able to perform those tasks with little
+modifications. The Lynx developers should look at replacing their
+scheduler package with a Dask wrapper.
 
 ### Communicating Model Results \[Data Science\]
 
