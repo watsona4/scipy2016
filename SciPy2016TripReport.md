@@ -182,10 +182,11 @@ up single-core performance. He demonstrated his approach with a matrix
 multiplication example that used nested loops. Typically, if one
 wanted to increase performance of the operation (which took ~100 s in
 pure Python), one would first use Numpy (~1 s), then Cython
-(compile-time optimization) or Numba (run-time optimization), both of
-which resulted in a speedup of 300,000x (~300 ms). Although this
-sounds impressive, doing an analysis of the specifications of his
-laptop, it was only 37% of the theoretical capability of the hardware.
+(compile-time optimization) or Numba (just-in-time [JIT]
+optimization), both of which resulted in a speedup of 300,000x (~300
+ms). Although this sounds impressive, doing an analysis of the
+specifications of his laptop, it was only 37% of the theoretical
+capability of the hardware.
 
 The speaker then described concurrent computing and
 GPU[^Graphical Processing Unit. A GPU is a hardware device normally found in high-end graphics and computational machines that is optimized for certain types of (often vectorized) computational operations. Using GPUs for those or similar computations can significantly increase performance. The primary drawbacks include proprietary, complex programming languages and the need to transfer data to special memory accessible to the GPU.]
@@ -1016,12 +1017,13 @@ distributed computing using tools such as MPI, Hadoop, and Spark.
 
 In order to address single-machine scaling, the speaker presented
 Numba, which is a Python package that translates Python code to
-machine code at runtime, for both CPU and GPU applications. This is
-done by providing a set of decorators to indicate which functions to
-translate and the architectures for which to compile the code. It also
-proides a vectorization decorator to vectorize Numpy universal
-functions (`ufunc`s). Helper functions also exist in Numba to assist in
-programming details that are specific to GPUs.
+machine code at runtime (JIT optimization), for both CPU and GPU
+applications. This is done by providing a set of decorators to
+indicate which functions to translate and the architectures for which
+to compile the code. It also proides a vectorization decorator to
+vectorize Numpy universal functions (`ufunc`s). Helper functions also
+exist in Numba to assist in programming details that are specific to
+GPUs.
 
 For "scaling out," the speaker presented an overview of
 [Dask](#dask). He showed a simple example of how to combine delayed
