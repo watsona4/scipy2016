@@ -1053,7 +1053,7 @@ Matplotlib BoF (Thursday)
 - 2.0 beta release out; only change is the default color map, and
   couple bug fixes
   - To get old styles:
-	```
+	```python
 	from matplotlib import style;
     style.use(‘classic’)
 	```
