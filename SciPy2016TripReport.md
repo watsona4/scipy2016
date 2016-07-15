@@ -1230,7 +1230,28 @@ Technology-Kharagpur)
 This session consisted of many short presentations on a variety of
 topics, some of which are listed below:
 
--
+- Bandit: security linter for Python
+- Wargames: platforms for learning how to hack and practice skills
+- CTF (capture the flag) competitions for testing skills
+- Mercurial: written in Python, demo of rebasing-like capability,
+  concept of draft (rewritable) commits vs. public (non-rewritable)
+  commits
+- Genapp: tool developed by NIST to assist non
+  computer&ndash;scientists in creating simple web-based GUIs for
+  collaboration
+- anagram.py: uses metaprogramming to determine anagrams
+- Numpy v1.11 new features
+- Tracking thunderstorms in areas with poor radar coverage by tracking
+  lightning data.
+- *Elegant SciPy*: new book that teaches how you use SciPy to write
+  elegant scientific software
+- Teaser about Enthought Canopy integration with LabView
+- Gadfly: used Pandas and Numba to store and analyze large
+  astrophysical datasets
+- Python CMake Build System: CMake-based build system for Python
+  interpreter
+- Generated functions in Python using Numba
+- ipywidgets: interactive widgets in Jupyter notebooks
 
 Birds of a Feather Sessions
 ===========================
