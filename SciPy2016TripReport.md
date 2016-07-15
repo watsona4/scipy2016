@@ -961,7 +961,27 @@ California, Berkeley)
 > demographic makeup based on their user essays, and we conclude by
 > sharing some unexpected insights into deception.
 
--
+The presenters were interested in analyzing the ways prople present
+themselves in an online dating context. They looked at both chosen
+characteristics (like gender, age, and drug use) and "essay" input,
+which involved tokenizing general text and looking for keywords. They
+analyzed the essay data based on both lexical analysis and semantic
+analysis, which looks for meanings not just words. This presentation
+only focused on the semantic anaysis.
+
+The presenters used the TF-IDF (term frequency–inverse document
+frequency) metric to convert from a word-space to a number-space,
+accounting for the occurrence of non-meaningful words. They then
+factorized the matrix of TF-IDF data to isolate topics from the data
+to categorize the entries into topical categories. They found that
+most topics are similarly weighted across demographics, but some can
+be very different. One example was the high interest in rock music by
+self-identified drug users. They found by visual inspection that it
+looked like users who didn't answer the question on drug use were more
+likely to use words in their essay entries that were similar to those
+used by self-identified drug users. Performing a machine learning
+analysis on the data showed that around 50% of users who didn't
+identify as drug users wrote in a way very similar to drug users.
 
 ### Scaling Up and Out: Programming GPU Clusters with Numba and Dask \[Data Science\]
 
