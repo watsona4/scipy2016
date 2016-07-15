@@ -828,19 +828,25 @@ for speeding up the build process.
 > supports both Python 2.7 and Python 3.4+. It will be available to
 > public use for free.
 
-- Summarized ways
-  - C-speed: cython
-  - JIT compiling: numba
-  - Write GPU code directly: pycuda, pyopencl
-- Hard and intrusive to insert GPU code into python
-- Gt-py uses pragmas similar to openmp to mark gpu sections
-  - Target can be cpu (serial or parallel) as well
-- Can loop and vectorize, and replace some standard library functions
-  with gt-py version
-- Shows *significant* performance increase (2&ndash;10,000x speedup)
-  even on multi-core CPU
-- First release end of Q3
-- Next steps: support for Xeon Phi and Altera FPGA
+The speaker presented an alternative to Numba/Dask for GPU
+programming, specifically for Intel GPUs. He first summarized the
+existing methods of improfing performance of Python code, which
+include compile-time optimization (Cython), JIT optimization (Numba),
+and manually writing GPU code using Python wrappers (PyCUDA and
+PyOpenCL). For GPU programming, it is difficult and intrusive to
+insert into existing code, and requries special knowledge of GPU
+programming and the specific hardware on which the code will be run.
+
+GT-Py was written by Intel to specifically address this issue for
+Intel GPUs. GT-Py uses `pragma`s similar to OpenMP to mark GPU
+sections of code that will be executed on the GPU. the `pragma`s can
+be used to target optimization for CPUs as well, both serially and in
+parallel. At this time, GT-Py provides `pragma`s for looping and
+vectorization, and `pragma`s to replace some common standart library
+functions as well. The speaker showed *significant* performance
+increase (2&ndash;10,000x speedup) even on multi-core CPUs. The first
+public release of GT-Py is scheduled for the fall, and will support
+Intel Xeon Phi and Altera FPGA GPUs in the future.
 
 [^Central Processing Unit. A CPU, in contrast to a GPU, is a general-purpose hardware device that it commonly used for computations, in addition to standard computer tasks such as running the operating system and productivity applications. It is typically easy to write code for a CPU, and many compilers exist to optimize software for a particular CPU. CPUs today typically include more than one "core," which is the component that performs the computations, and all the cores on a CPU share some portion of a fast memory buffer. Each core can typically run one process at a time, with each process having one or two threads of computation. A single computer may have one (typical) or many CPUs.]
 
