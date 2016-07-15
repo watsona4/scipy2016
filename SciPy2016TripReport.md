@@ -648,23 +648,34 @@ pendulum problem to show dynamic control of the pendulum.
 
 (Eric Jones, CEO, Enthought)
 
-- Companies use sets of COTS software to perform tasks
-- Not interested in software, but want something to make lives easier
-- Dont break the code!
-- Desired approach w/o UI: replace physics engine with Python, then
-  you can build all kinds of things around the kernel
-- If you have a UI:
-  - Lucky if its written in C++, but probably Java or C\#
-  - Write scripts that use data models under the hood
-  - Provide menu options calling scripts
-  - Data exchage through files
-  - Not a great solution, memory/speed can suffer
-  - Can also provide user embedded Python shell
-- Canopy is designed to provide toolkit to do this
-- Canopy Geo is a proprietary tool written for a specific customer,
-  but the geophysicsl part can be stripped out and replaced by
-  anything
-- Can deal with large amounts of data efficiently (&gt;1 TB) datasets
+Commercial customers use many types of commercial off-the-shelf (COST)
+software to perform their work, and they are interested in reducing
+costs and makin their employees' lobs easier, but they don't care about
+software; they want modern tools, but they don't want to break their
+current processes that work. The presenter discussed his company's
+approach to addressing the concerns of his commercial customers. He
+outlined two approaches depending on the tool he was replacing or
+augmenting.
+
+If the tool does not have a graphical interface, his approach is
+simple: replace the physics engine with Python, then one can build all
+kinds of things around the kernel. These things can be scripted input,
+graphical interfaces, web interfaces, etc. If the tool does have a
+graphical interface, there are several levels of options. The first
+involves modifying the tool to read and write the data models that are
+used under the hood, then writing external Python scripts that modify
+these files and can be called through menu options. The second
+approach involves accessing the internal data models directly through
+Python, which can be more difficult but is often more performant as
+well.
+
+Enthought provides the tools to do this in the Canopy
+project. Specifically, the CanopyGeo product, which was developed for
+a geophysical customer. The geophyics solver in CanopyGeo can easily
+be stripped out and replaced by another physics solver while keeping
+the outside system intact. This allows a high-performace system to be
+constucted that can handle large amounts of data efficiently (datasets
+in CanopyGeo can be &gt;1 TB).
 
 ### Out with the Old and in with the New: Embedding Python in Old Fortran HPC Code \[HPC\]
 
