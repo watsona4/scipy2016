@@ -535,7 +535,7 @@ brackets following the title, and well as the speakers’ names and
 affiliations. Additionally, the provided summary of the talk is shown,
 along with the attendees’ comments.
 
-### Dask: Parallel and Distributed Computing \[General\]
+### <a name="dask"/>Dask: Parallel and Distributed Computing \[General\]
 
 (Matthew Rocklin and Jim Crist, Continuum Analytics)
 
@@ -1057,6 +1057,7 @@ Distributed Computing BoF (Wednesday)
   - Can we use this model for FY17?
 - The author of Dask talked about solutions to ther peoples problems;
   the way he sopke makes me think Dask is lynx.coupling!
+- See [section on Dask](#dask)
 - Docker??
 
 Matplotlib BoF (Thursday)
