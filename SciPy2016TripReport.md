@@ -187,18 +187,20 @@ which resulted in a speedup of 300,000x (~300 ms). Although this
 sounds impressive, doing an analysis of the specifications of his
 laptop, it was only 37% of the theoretical capability of the hardware.
 
-The speaker then described concurrent computing and GPU computing and
-proposes that programmers should decompose these operations into tasks
-and approach a solution like in GPU computing. The issue is that is
-not a simple thing to do and requires expertise. He then introduced
-Loopy, which is a Python package for generating GPU code from a common
-syntax. Using this package and inspecting the generated C code,
-including vectorization and cache utilization, he was able to tune his
-example algorithm to his machine; the final runtime for his algorithm
-was 45 ms (better than optimal because task were executed on the GPU
-as well). He also showed how Loopy can predict the optimal runtime and
-memory usage for the hardware. At this time, Loopy supports generation
-of OpenCL, CUDA, Intel Xeon Phi, and Numba code.
+The speaker then described concurrent computing and
+GPU[^Graphical Processing Unit. A GPU is a hardware device normally found in high-end graphics and computational machines that is optimized for certain types of (often vectorized) computational operations. Using GPUs for those or similar computations can significantly increase performance. The primary drawbacks include proprietary, complex programming languages and the need to transfer data to special memory accessible to the GPU.]
+computing and proposes that programmers should decompose these
+operations into tasks and approach a solution like in GPU
+computing. The issue is that is not a simple thing to do and requires
+expertise. He then introduced Loopy, which is a Python package for
+generating GPU code from a common syntax. Using this package and
+inspecting the generated C code, including vectorization and cache
+utilization, he was able to tune his example algorithm to his machine;
+the final runtime for his algorithm was 45 ms (better than optimal
+because task were executed on the GPU as well). He also showed how
+Loopy can predict the optimal runtime and memory usage for the
+hardware. At this time, Loopy supports generation of OpenCL, CUDA,
+Intel Xeon Phi, and Numba code.
 
 Keynote \#3: Machine Learning for Social Science
 ------------------------------------------------
@@ -838,6 +840,8 @@ for speeding up the build process.
   even on multi-core CPU
 - First release end of Q3
 - Next steps: support for Xeon Phi and Altera FPGA
+
+[^Central Processing Unit. A CPU, in contrast to a GPU, is a general-purpose hardware device that it commonly used for computations, in addition to standard computer tasks such as running the operating system and productivity applications. It is typically easy to write code for a CPU, and many compilers exist to optimize software for a particular CPU. CPUs today typically include more than one "core," which is the component that performs the computations, and all the cores on a CPU share some portion of a fast memory buffer. Each core can typically run one process at a time, with each process having one or two threads of computation. A single computer may have one (typical) or many CPUs.]
 
 ### HoloViews: Let your Data Reveal Itself \[Data Science\]
 
