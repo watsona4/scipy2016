@@ -601,20 +601,16 @@ scheduler package with a Dask wrapper.
 > talk summarizes the learnings and key takeaways when communicating
 > model results.*
 
-- "Data is just a clue to the truth"
-- Simple example using stock prices
-- Can plot the model, but want to vary model parameters and us ethe
-  model on different sets of test data
-- Hard to make sense of all this data
-- Visualization is more of an art than a science
-- 1d and 2d space are easy, but 3d and greater is really hard to
-  comprehend
-- Presented lots of examples of plotting different models and
-  parameters
-- Working on typical plots of data that are commonly used
-- Offerred nothing new for data visualization, just simple functions
-  that produce standard plots
-- R has many more capabilities, trying to port into python (doom?)
+This presentation was an overview of commonly used plots in the data
+science field. He used a simple example of stock prices to show
+different plotting techniques. It is easy to plot the projections of a
+single model, but how do you plot the model in the parameter space or
+different models with different parameter spaces? Additionally, how
+does one plot a parameter space with many dimensions? There were no
+answers to these questions, but common approaches were shown. The
+presenter pointed out that R has many more capabilities than Python
+for plotting these types of data at this time, but developers are
+working hard to add R-like capabilities to Python.
 
 ### SymPy Code Generation \[General\]
 
