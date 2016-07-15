@@ -1052,23 +1052,41 @@ systems.
 
 (Devin Matthews, The University of Texas at Austin)
 
-> Tensor computations are an important kernel in many
-> high-performance domains such as quantum chemistry, statistics,
-> machine learning, and others. We follow the example of the
-> successful BLAS interface for matrix operations in defining a
-> simple, low-level interface for tensor contraction and other
-> operations, while providing a high-performance implementation using
-> the BLIS framework. In this talk, the proposed "BLAS-like" tensor
-> interface is discussed in the context of existing tensor and matrix
-> abstractions, and performance data for tensor contraction is
-> presented. Our tensor contraction implementation achieves similar
-> performance to matrix multiplication and does not require any
-> explicit tensor transposition or additional workspace, while also
-> incorporating multithreading at several levels. These traits make
-> our implementation ideal for layering underneath higher-level
-> interfaces such as NumPy.
+> Tensor computations are an important kernel in many high-performance
+> domains such as quantum chemistry, statistics, machine learning, and
+> others. We follow the example of the successful BLAS interface for
+> matrix operations in defining a simple, low-level interface for
+> tensor contraction and other operations, while providing a
+> high-performance implementation using the BLIS framework. In this
+> talk, the proposed "BLAS-like" tensor interface is discussed in the
+> context of existing tensor and matrix abstractions, and performance
+> data for tensor contraction is presented. Our tensor contraction
+> implementation achieves similar performance to matrix multiplication
+> and does not require any explicit tensor transposition or additional
+> workspace, while also incorporating multithreading at several
+> levels. These traits make our implementation ideal for layering
+> underneath higher-level interfaces such as NumPy.
 
--
+The speaker presented a brief overview of a BLAS (Basic Linear Algebra
+Subsystem), and lamented that, although tensor operations are very
+similar to the operations performed in BLAS, there doesn't currently
+exist a tensor BLAS that is as optimized as vectors and
+matrices. Tensor operations are common in many different engineering
+and science disciplines, and applied mathematics. He also spoke to the
+user interface for BLAS, which was defined many years ago and
+originally written in Fortran 77.
+
+The speaker then pointed out improvements that may be made to the BLAS
+interface, and proposed an interface that is more general and optimal
+for tensor contractions, his operation of interest. He then
+generalized this interface to many other vector, matrix, and tensor
+operations. Finally, he introduced the BLIS library, which implements
+this interface using low-level, optimized assembly and C/C++ code. His
+performance shows comparable performance with Intel-developed
+libraries on Intel hardware. This interface is similar to the
+interface of the Numpy `einsum` function, which was written for this
+specific purpose and could be modified to use this approach under the
+hood.
 
 ### Launching Python Applications on Peta-scale Massively Parallel Systems \[HPC\]
 
