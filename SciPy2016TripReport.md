@@ -522,9 +522,9 @@ distributing package binaries for Windows.
 This session consisted of many short presentations on a variety of
 topics. Many of them highlighted future conferences or logistical
 concerns about this conferences, but one of interest was on
-conda-forge. This is a collaborative system for building and
-distributing Python packages, which is detailed later in this trip
-report.
+[conda-forge](#conda-forge). This is a collaborative system for
+building and distributing Python packages, which is detailed later in
+this trip report.
 
 Thursday Sessions
 -----------------
@@ -687,7 +687,7 @@ scheduler package with a Dask wrapper.
 - Nothing really beyond what we have done in Lynx, but its a little
   simpler to integrate new code in an existing solver
 
-### Community Powered Packaging with conda-forge
+### <a name="conda-forge"/>Community Powered Packaging with conda-forge
 
 (Philip Elson, Met Office)
 
