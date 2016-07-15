@@ -1109,7 +1109,7 @@ for Data Science)
 > overhead typically less than 2 minutes. We expect the method to be
 > portable to similar applications in Julia or R. We also hope the
 > three tier system for the supporting components provides some
-> insight for the container based solutions for launching applications
+> insight for the container-based solutions for launching applications
 > in a development environment. We provide the full source code of an
 > implementation of the method at
 > https://github.com/rainwoodman/python-mpi-bcast. Given that large
@@ -1118,7 +1118,27 @@ for Data Science)
 > performance computing community to seriously consider building
 > complicated computational applications at large scale with Python.
 
--
+The presenter works in the astrophysis field and needs to perform
+large matrix operations on large datasets. Unfortunately modern
+systems such as Hadoop or Spark aren't good at this, but traditional
+HPCs are. However, much of his work is migrating to Python and he is
+interested in running Python in parallel on large HPCs. The issue with
+this is that Python modules are imported by reading files, which are
+typically stored on a global shared file system, resulting in
+bottlenecks in starting up Python sessions (can take up to one second
+for each process serially). The typical solution to this is to bypass
+the global filesystem and store Python modules locally using
+virtualization or containers. The problem with this is that it is
+difficult to maintain and preserve consistency with development
+environments.
+
+The presenter's solution was to develop an application that runs in
+parallel whose job is to load application bundles on the master
+process, broadcast the bundles to the slave nodes, and deploy the
+bundles to provide the Python environment locally. This results in
+greatly improved startup time for the Python runtime and dependent
+modules, starting up hundreds of thousands of Python sessions in a few
+minutes.
 
 ### SymEngine: A Fast Symbolic Manipulation Library \[General\]
 
