@@ -139,7 +139,7 @@ visualization task.
 The speaker has spoken with the owners of the other Python
 visualization libraries, such as Matplotlib and Bokeh, and there is
 interest in those packages adopting Vega as a standard language as
-well. Altair provides a carefully-designed API, which includes type
+well. Altair provides a carefully designed API, which includes type
 checked attributes, a thin layer of methods, method chaining, and
 operator overloading. The API follows the "flat is better than nested"
 guidance. In addition to generating Vega JSON from Python code, Altair
@@ -446,8 +446,8 @@ into the design of their system.
 > in publications to format results without the risk of copy-and-paste
 > error.*
 
-This talk was very interesting. The presenter is a graduate student
-who wrote a simple API to define dependencies for SCons, a software
+This talk was interesting. The presenter is a graduate student who
+wrote a simple API to define dependencies for SCons, a software
 construction tool (similar to CMake) that is written in Python. SCons
 can dynamically determine control flow based on dependencies between
 targets. She used this system to perform her research and write her
@@ -481,10 +481,9 @@ results, including the results published in the thesis.
 > factors relevant to creating a useful linter.*
 
 The summary above reflects the content of this presentation. Proselint
-appears to be a very useful tool for documentation and
-letter-writing. It recognizes many *text* formats, so to analyze a
-Word document or other binary formats, it must first be converted to
-plain text using Pandoc.
+appears to be a useful tool for documentation and letter-writing. It
+recognizes many *text* formats, so to analyze a Word document or other
+binary formats, it must first be converted to plain text using Pandoc.
 
 ### Reinventing the .whl: New Developments in the Upstream Python Packaging Ecosystem \[General\]
 
@@ -552,14 +551,14 @@ along with the attendees’ comments.
   specification for other things
 - They have also written a distributed scheduler for large machines
 - Showed *delayed* class
-  - Very simple interface (one function)
+  - Simple interface (one function)
   - Can visualize graph of computations
   - Lazy object, only computes later when .compute() called
 - Distributed scheduler is dala-local aware
 - Asynchronous communication with client
 - Robust to support losing a machine or adding workers at any time
-- Uses tornado under the hood; interface is very similar to lynx
-  broker, scheduler framework
+- Uses tornado under the hood; interface is similar to lynx broker,
+  scheduler framework
 - Machine learning: dklearn intended to distribute sklearn tasks
 - Continuum analytics
 
@@ -711,9 +710,9 @@ along with the attendees’ comments.
 > packages, and it wasn't possible to build every package for each
 > commit of the repository.*
 >
-> *SciPy 2015 proved to be the the ideal platform to refine and
-> develop a plan to solve these issues, and to scale the conda package
-> building pipeline out to a wider community of packagers.*
+> *SciPy 2015 proved to be the ideal platform to refine and develop a
+> plan to solve these issues, and to scale the conda package building
+> pipeline out to a wider community of packagers.*
 >
 > *In this talk, I will present conda-forge&mdash;an ambitious project
 > which has grown into a thriving community with openness and
@@ -742,7 +741,7 @@ along with the attendees’ comments.
     linting for recipe standards.
 - Anyone can add a new recipe,and theres an automated system in place
   using Github hooks that enables this
-- Future plans include an installer for speding up build process.
+- Plans include an installer for speding up build process.
 
 ### GT-Py: Accelerating NumPy programs on CPU & GPU with Minimal Programming Effort \[General\]
 
@@ -789,7 +788,7 @@ along with the attendees’ comments.
 > various plotting backends including matplotlib and bokeh.*
 
 - Dynamic plotting to allow exploration of data, contrasted to
-  matplotlib, with very few lines of code
+  matplotlib, with few lines of code
 - Can add additional dimensions to plots by faceting, overlays,
   dropdowns, sliders, and combinations thereof by chaining commands
 - Can compare and combine data inline, and provides interactive
@@ -1025,7 +1024,7 @@ Birds of a Feather Sessions
 
 In an effort to increase community building, SciPy emphasizes the
 birds of a feather sessions (BoFs) to discuss primary or
-tangentially-related topics in an interactive setting. These sessions
+tangentially related topics in an interactive setting. These sessions
 usually include short presentations by a moderator and panel followed
 by an open discussion with everyone in attendance. The BoFs attended
 are summarized below.
