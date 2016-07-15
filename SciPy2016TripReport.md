@@ -999,7 +999,44 @@ identify as drug users wrote in a way very similar to drug users.
 > we will conclude with tips and tricks for working with GPUs and
 > distributed computing.
 
-- 
+lead developer of numba at ca
+
+what s scaling? how to scale up with numba, and scale out with dask
+
+scaling up: better cpus, adding gpus or multiple gpus (cython, cuda, opencl)
+scaling out: distributed computing (mpi, hadoop, spark)
+
+numbe translates python to machine code at runtime, for both cpu and
+gpu
+
+helper functions exist to help with programming details specific to
+gpus
+
+provides decorators to indicate functions to encode; even includes a
+vectorization decorator to vectorize ufuncs
+
+provided overview of dask
+synch, threaded, multiprocess, and distributed schedulers
+
+showed simple example of how to combine delayed tasks into a graph of
+an algorithm
+
+bonus: visualization of the generated graph can help in analysis of
+algorithm
+
+dask also recognizes data that should be shared between functions and
+reduces then to one function call automatically
+
+converting the algorithm from local execution to distributed exetion
+only requires adding two lines of code
+
+also very simple to execute workers on multiple gpus on a single
+machine
+
+demoed image stitching algorithm using numba and dask
+
+showed 2x speedup when running on 2 boxed vs 1, also showed mixed
+windows-linux execution to demonstrate heterogeneous systems
 
 ### A "BLAS" for Tensors with Portable High Performance \[HPC\]
 
