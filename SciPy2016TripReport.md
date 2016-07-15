@@ -670,9 +670,9 @@ working hard to add R-like capabilities to Python.
 
 SymPy is a Python package that does symbolic mathematics, similar to
 *Mathematica*. When used in upyter notebooks, SymPy results are
-returned as MathJax (or $\LaTeX$) output, displaying the result in
-purely symbolic form. The presented showed a new capability of
-exporting symbolic math as source code (similar to `CForm` in
+returned as MathJax (or LaTeX) output, displaying the result in purely
+symbolic form. The presented showed a new capability of exporting
+symbolic math as source code (similar to `CForm` in
 *Mathematica*). This capability allows for mathematical optimizations
 in addition to compiler optmizations. At ths time, these matematical
 optimizations are limited to reducing the number of operations, and
@@ -685,14 +685,14 @@ pendulum problem to show dynamic control of the pendulum.
 
 (Eric Jones, CEO, Enthought)
 
-Commercial customers use many types of commercial off-the-shelf (COST)
+Commercial customers use many types of commercial off-the-shelf (COTS)
 software to perform their work, and they are interested in reducing
-costs and makin their employees' lobs easier, but they don't care about
-software; they want modern tools, but they don't want to break their
-current processes that work. The presenter discussed his company's
-approach to addressing the concerns of his commercial customers. He
-outlined two approaches depending on the tool he was replacing or
-augmenting.
+costs and makin their employees' lobs easier, but they don't care
+about software; they want modern tools, but they don't want to break
+their current processes that work. The presenter discussed his
+company's approach to addressing the concerns of his commercial
+customers. He outlined two approaches depending on the tool he was
+replacing or augmenting.
 
 If the tool does not have a graphical interface, his approach is
 simple: replace the physics engine with Python, then one can build all
