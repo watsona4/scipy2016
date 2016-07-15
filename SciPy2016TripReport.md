@@ -47,12 +47,12 @@ The afternoon centered around testing in Python, using assertions for
 preconditions and Pytest for unit and integration tests. For
 regression testing, the point was made that tests for bugs should be
 included in regression testing to prevent the bug from
-reappearing. Finally, the concept of continuous integration testing
-was introduced, which tied together all aspects of the course: Python,
-version control, and testing. The Travis CI platform was used as the
-continuous integration system. The instructors stressed the importance
-of testing, and relayed the Python testing mantra as, "If it’s not
-tested, it’s broken."
+reappearing. Finally, the concept of continuous integration (CI)
+testing was introduced, which tied together all aspects of the course:
+Python, version control, and testing. The Travis CI platform was used
+as the continuous integration system. The instructors stressed the
+importance of testing, and relayed the Python testing mantra as, "If
+it’s not tested, it’s broken."
 
 At NNL-Knolls, many Python and non-Python projects already use the Git
 version control system successfully. The Lynx project uses Microsoft's
