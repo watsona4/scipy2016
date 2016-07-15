@@ -1000,44 +1000,37 @@ identify as drug users wrote in a way very similar to drug users.
 > we will conclude with tips and tricks for working with GPUs and
 > distributed computing.
 
-lead developer of numba at ca
+The presenter is the lead developer of the Numba package at Continuum
+Analytics. His presentation addressed "scaling up," which he defined
+as adding CPUs and GPUs on a single macine using tools such as Cython,
+CUDA, and OpenCL, and "scaling out," which he defined as analogous to
+distributed computing using tools such as MPI, Hadoop, and Spark.
 
-what s scaling? how to scale up with numba, and scale out with dask
+In order to address single-machine scaling, the speaker presented
+Numba, which is a Python package that translates Python code to
+machine code at runtime, for both CPU and GPU applications. This is
+done by providing a set of decorators to indicate which functions to
+translate and the architectures for which to compile the code. It also
+proides a vectorization decorator to vectorize Numpy universal
+functions (`ufunc`s). Helper functions also exist in Numba to assist in
+programming details that are specific to GPUs.
 
-scaling up: better cpus, adding gpus or multiple gpus (cython, cuda, opencl)
-scaling out: distributed computing (mpi, hadoop, spark)
+For "scaling out," the speaker presented an overview of
+[Dask](#dask). He showed a simple example of how to combine delayed
+tasks into a graph of an algorithm. Dask recognizes data that should
+be shared between functions and reduces them automatically.  Then,
+visualization of the generated graph can help in analysis of a
+particular algorithm. Converting the algorithm from local execution to
+distributed execution then only requires adding two lines of
+code. Another benefit of Dask is that it simplifies execution of
+workers on multiple GPUs on a single machine.
 
-numbe translates python to machine code at runtime, for both cpu and
-gpu
-
-helper functions exist to help with programming details specific to
-gpus
-
-provides decorators to indicate functions to encode; even includes a
-vectorization decorator to vectorize ufuncs
-
-provided overview of dask
-synch, threaded, multiprocess, and distributed schedulers
-
-showed simple example of how to combine delayed tasks into a graph of
-an algorithm
-
-bonus: visualization of the generated graph can help in analysis of
-algorithm
-
-dask also recognizes data that should be shared between functions and
-reduces then to one function call automatically
-
-converting the algorithm from local execution to distributed exetion
-only requires adding two lines of code
-
-also very simple to execute workers on multiple gpus on a single
-machine
-
-demoed image stitching algorithm using numba and dask
-
-showed 2x speedup when running on 2 boxed vs 1, also showed mixed
-windows-linux execution to demonstrate heterogeneous systems
+Finally, the speaker demonstrated an image stitching algorithm that
+used Numba and Dask. He stitched an image that was broken into 30
+pieces, showing a factor of two speedup when running on two single-CPU
+machines versus one machine, and also showed mixed Windows-Linux
+execution to demonstrate Dask's ability to schedule on heterogeneous
+systems.
 
 ### A "BLAS" for Tensors with Portable High Performance \[HPC\]
 
