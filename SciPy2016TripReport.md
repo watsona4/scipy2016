@@ -503,11 +503,19 @@ binary formats, it must first be converted to plain text using Pandoc.
 > the latest updates on our effort to drive a stake through the heart
 > of setup.py files and replace them with something better.*
 
-- Looks like setup.py will eventually be going away! This project
-  builds wheels specifically for Linux platforms, and
-- The author fixed a simple bug in GCC that prevented linking against
-  Microsoft libraries. With this bug fixed, MSVC is not necessary to
-  build Python binaries.
+This presentation updated th status of the Wheel system and how it
+fits into the standard Python packaging system. The Python Package
+Index (PyPI) is the standard way of optaining pre-built package
+distributions, and now has the ability to distribute pckages
+specifically for Liunx. This allows packages that have extensive
+external dependencies (like Numpy's dependency on BLAS) to include
+those dependent libraries in a binary distribution. Additionally, the
+presenter was curious why Microsoft libraries couldn't be linked from
+open source compilers, like the GNU C Compiler (GCC). During his
+investigation, the presenter discovered a bug in GCC that prevented it
+from recognizing some Microsoft library wrappers. With a one-line fix,
+GCC can now link against Microsoft libraries. This will help in
+distributing package binaries for Windows.
 
 ### Lightning Talks
 
