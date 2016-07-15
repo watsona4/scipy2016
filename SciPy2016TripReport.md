@@ -1154,7 +1154,24 @@ Technology-Kharagpur)
 > chose C++, benchmarks, and examples of usage from Python (SymPy and
 > Sage), Ruby and Julia.
 
--
+- The presenter is the author of SymPy
+- Library written in C++, with thin wrappers for Python, Ruby, Julia,
+  and Haskell
+- Goal was to be fastest library, and serve as core for SymPy
+- SymPy can be slow for large expressions
+- explored many options to improve performace, but eventually chose
+  C++
+- demoed in pyhon, rupy, and julia, all using jupyter notebooks with
+  different backends
+- SymPy can use SymEngine under the hood, but not all capabilities are
+  yet in SymEngine. The expressions can be mixed and SymPy will still
+  work for stuff not in SymEngine yet
+- Uses Trilinos Teuchos library for reference-counted pointers to
+  prevent memory leaks
+- Benchmarked against GiNaC, sympy, mathematica and maple
+- Not as fast as Maple for polynomials, but faster for more complex
+  operations. Faster than Mathematica for all benchmarks. Much faster
+  than SymPy alone (30x).
 
 ### Diffing and Merging Jupyter Notebooks with nbdime \[General\] (youtube)
 
