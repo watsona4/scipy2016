@@ -786,23 +786,27 @@ in CanopyGeo can be &gt;1 TB).
 > the maintenance of the packages that you care about through
 > conda-forge.
 
-- History:
-  - Use conda-build recipe (YAML file) to define how to build a
-    package
-  - Wrote a tool called conda-build-all (formerly ObviousCI) to build
-    dependencies in a CI framework
-  - Built the conda-recipes-scitools repository for store the
-    recipes. Other s followed, including ioos/conda-build and Bioconda
-  - To keep scope down and simplify bulding, they came up with the
-    idea of creating a Github community where each repository
-    contained only one recipe (called feedstock). The community is
-    called conda-forge
-  - Wrote conda-smithy tool that creates a recipe from a feedstock
-    cookie-cutter and creates the Github repo for the recipe. Added
-    linting for recipe standards.
-- Anyone can add a new recipe,and theres an automated system in place
-  using Github hooks that enables this
-- Plans include an installer for speding up build process.
+Anaconda comes with a command line utility (called "conda") that is
+used by the system for package management. The "conda-build" command
+builds a package from a build recipe, which is defined in a
+YAML-formatted file. A few years ago, the presenter developed a
+package called ObviousCI that could be used in a CI tool to install
+package dependencies with conda; this capability was brought into
+conda through a command called "conda-build-all." The presenter
+created the "conda-recipes-scitools" repository to store the recipes
+used by conda-build-all. Others followed suit, including
+ioos/conda-build and Bioconda. As usage increased, the presenter
+proposed the idea of creating a Github community where each repository
+contained only one recipe (called a "feedstock"). That community is called
+"conda-forge."
+
+The presenter has recently written the "conda-smithy" tool that
+creates a recipe from a feedstock template and creates the Github
+repository for the recipe in conda-forge. Anyone can add a new recipe,
+and there is an automated system in place using Github hooks that
+enables this configuration control. Recent additions include a linter
+for checking recipe standards. Plans include releasing an installer
+for speeding up the build process.
 
 ### GT-Py: Accelerating NumPy programs on CPU & GPU with Minimal Programming Effort \[General\]
 
