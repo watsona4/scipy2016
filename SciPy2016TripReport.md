@@ -1186,3 +1186,4 @@ Conclusions
 - Convert to Anaconda for management of software stack
 - All presentations are available on
   [Enthought's YouTube channel](https://www.youtube.com/playlist?list=PLYx7XA2nY5Gf37zYZMw6OqGFRPjB1jCy6).
+- Spark
