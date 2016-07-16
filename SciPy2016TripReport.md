@@ -1048,7 +1048,7 @@ machines versus one machine, and also showed mixed Windows-Linux
 execution to demonstrate Dask's ability to schedule on heterogeneous
 systems.
 
-### A "BLAS" for Tensors with Portable High Performance \[HPC\] (youtube)
+### A "BLAS" for Tensors with Portable High Performance \[HPC\]
 
 (Devin Matthews, The University of Texas at Austin)
 
@@ -1088,7 +1088,7 @@ interface of the Numpy `einsum` function, which was written for this
 specific purpose and could be modified to use this approach under the
 hood.
 
-### Launching Python Applications on Peta-scale Massively Parallel Systems \[HPC\] (youtube)
+### Launching Python Applications on Peta-scale Massively Parallel Systems \[HPC\]
 
 (Yu Feng, Berkeley Center for Cosmological Physics, Berkeley Institute
 for Data Science)
@@ -1140,7 +1140,7 @@ greatly improved startup time for the Python runtime and dependent
 modules, starting up hundreds of thousands of Python sessions in a few
 minutes.
 
-### SymEngine: A Fast Symbolic Manipulation Library \[General\] (youtube)
+### SymEngine: A Fast Symbolic Manipulation Library \[General\]
 
 (Ondřej Čertík, Los Alamos National Laboratory, and Isuru Fernando,
 Thilina Rathnayake, and Abhinav Agarwal, Indian Institute of
@@ -1173,7 +1173,7 @@ Technology-Kharagpur)
   operations. Faster than Mathematica for all benchmarks. Much faster
   than SymPy alone (30x).
 
-### Diffing and Merging Jupyter Notebooks with nbdime \[General\] (youtube)
+### Diffing and Merging Jupyter Notebooks with nbdime \[General\]
 
 (Min Ragan-Kelley, IPython/Jupyter, Simula Research Lab)
 
