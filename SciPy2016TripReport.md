@@ -1320,14 +1320,21 @@ change at any time. Additionally, JupyterLab, and its front end
 jupyter.js, are designed to be completely customizable bu the user,
 and will provide a stable interface for adding custom plugins.
 
-- open to communication with users via GitHub
-- very open to working with new people to develop new capabilities in
-  IPython and JupyterLab
-- Notes on [Google Docs](http://tinyurl.com/jupyter-bof-2016)
-- nbgrader: under development; intended for instructors to use
-  notebooks as assignments and exams, but can be used to format
-  notebooks for presentation to someone who's not coding literate
-- planning first conference, JupyterCon, tbd
+The Jupyter team seemed open to collaborating with others in the open
+source community, from answering questions on usage and design work,
+to helping program in Jupyter itself. This openness applies to novice
+Python developers as well. They were also open to helping others write
+plugins for JupyterLab after its initial release. The Jupyter team is
+also planning on hosting its first Jupyter-specific conference, called
+JupyterCon, but the date it still to be determined.
+
+A new Jupyter tool, nbgrader, is still under development, but is
+intended to be used by teachers and professors to allow the use of
+Jupyter notebooks in the classroom, for homework assignments and for
+exams. The tool will also be able to reformat notebooks for
+consumption by those who are coding illiterate. This can be useful for
+writing letters an other documents, and for non-technical presentations
+to management.
 
 One of the attendees asked what the Jupyter team's ideas are for their
 next steps after JupyterLab is fully released. The lead developer said
