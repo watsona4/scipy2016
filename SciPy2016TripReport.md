@@ -110,8 +110,8 @@ afternoon, consisted of three parallel sessions with different topical
 focus areas. Both the keynote addresses and focus area talks will be
 discussed below.
 
-Keynote \#1: Altair: Declarative Statistical Visualization in Python
---------------------------------------------------------------------
+<a name="altair"/>Keynote \#1: Altair: Declarative Statistical Visualization in Python
+--------------------------------------------------------------------------------------
 (Brian Granger, Associate Professor of Physics, Cal Poly State University)
 
 This speaker is the creator of iPython and the Jupyter ecosystem. He
@@ -1283,17 +1283,19 @@ presented [elsewhere](#dask) in this trip report.
 
 Matplotlib BoF (Thursday)
 -------------------------
-- 2.0 beta release out; only change is the default color map, and
-  couple bug fixes
-  - To get old styles:
-	```python
-	from matplotlib import style;
-    style.use(‘classic’)
-	```
-  - No way to get old styles globally
-- 2.1 will be soon-ish, and will include api changes
-  - Traitlets: will allow export to multiple formats (altair
-    integration)
+There are two major upcoming releases of Matplotlib. Version 2.0,
+which is currently in beta and will be released in a few weeks, is a
+"major" release, but *only* introduces changes to the default color
+map, and bug fixes that were found in testing the new color map. The
+old default colors can be recovered by setting the following:
+```python
+from matplotlib import style;
+style.use(‘classic’)
+```
+The version 2.1 release will follow soon thereafter, and will include
+some major API changes. One major change is the use of traitlets,
+which is a Python 3 module that will allow integration with
+[Altair](#altair).
 
 Jupyter BoF (Friday)
 -------------------
