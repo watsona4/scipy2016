@@ -911,34 +911,40 @@ graphics, while Bokeh excels at interactivity.
 > editors, terminals, output areas, etc. on a single page with
 > multiple panels, tabs, splitters, and collapsible sidebars with a
 > file browser, command palette and integrated help system. The
-> codebase and UI of JupyterLab is based on a flexible plugin system
+> code base and UI of JupyterLab is based on a flexible plugin system
 > that makes it easy to extend with new components.
 >
 > In this talk, we will demonstrate the JupyterLab interface, its
-> codebase, and describe how it fits within the overall roadmap of the
+> code base, and describe how it fits within the overall roadmap of the
 > project.
 
-- LIGO using jupyter notebooks to release data
-- Binder can run notebooks remotely (local installation?)
-- Capabilities of Jupyter:
-  - File explorer
-  - Code editor
-  - Shell
-  - Notebooks
-- Wants:
-  - Version control integration
-  - Code editing
-  - Layout of building blocks
-  - Debugging
-- JupterLab is the natural evolution of the Notebook
-  - It *is* and IDE!
-  - Preview only at this point
-  - ENTIRE SOFTWARE IS 45 LINES OF JAVASCRIPT!
-    - Very easy to add capabilities!!!
-  - Live and interactive panels: a new pythoner wrote a rst file
-    rendered in a few hours, and it shows live!
-  - WOW!!!
-  - Alpha release today, 1.0 release next SciPy
+The presenter is the lead developer of the Jupyter system. He began by
+speaking to the current capabilities of Jupyter and the user
+base. Recent additions to the user community includes LIGO, the Laser
+Interferometer Gravitational-Wave Observatory, which recently
+published its discovery of gravitational waves from colliding black
+holes using Jupyter notebooks. Another recent development includes
+Binder, which can remotely host and execute Jupyter notebooks using
+Docker.
+
+The current capabilities of Jupyter include: a file explorer (the
+"tree"), a code editor, a shell extension, and the notebooks. The
+developers want to add future capabilities, such as integration with
+version control systems, code editing, layout of building blocks, and
+debugging. However, with the design of the "notebook" capabilities,
+these are not easy to do.
+
+A new project, called JupyterLab, seeks to redesign the Jupyter front
+end into a pluggable interface. Under JupyterLab, all the current
+features of Jupyter, including notebooks, will be plugins that can be
+customized to fit the end users' needs. JupyterLab is the natural
+evolution of the notebook, serving as a complete, and completely
+customizable, integrated development environment for Python, Julia,
+and Ruby.
+
+At this time, JupyterLab has been released in an alpha version. The
+developers hope to have a major release before the SciPy 2017
+conference.
 
 ### Lightning Talks (youtube)
 
