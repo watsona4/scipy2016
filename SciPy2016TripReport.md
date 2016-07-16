@@ -9,6 +9,10 @@ days of talks (July 13–15), and two days of developer sprints (July
 16–17). The attendee did not participate in the developer sprints, so
 they will not be discussed in this trip report.
 
+The attendee is a developer on the Lynx project, so most of his
+conclusions are cast in the context of Lynx, though they may be
+applicable to other Python-based software projects within NNL.
+
 Tutorials
 =========
 Attendees were allowed to select from four half-day tutorials, though
@@ -28,7 +32,7 @@ Software Carpentry: Scientific Python
 This course was intended for beginning Python programmers. Although
 the attendee considers himself to be an intermediate Python
 programmer, several good software practices were taught that will be
-incorporated into Python development projects within NNL.
+incorporated into the Lynx project.
 
 The first hour of the course focused on the basics of Python, using
 Jupyter notebooks as the platform. Normally, Software Carpentry
