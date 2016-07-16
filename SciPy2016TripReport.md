@@ -1299,15 +1299,45 @@ which is a Python 3 module that will allow integration with
 
 Jupyter BoF (Friday)
 -------------------
-- Around the room with introductions and interests
-- Dediated to improving stability for future extensions
-- Will make better distinction between public stable APIs and
-  non-public APIs
-- open to communication wth users via GitHub
+Most of the discussion at this BoF revolved around the current and
+future capabilities of the Jupyter notebook, and the impending release
+of JupyterLab, about which the entire community seems to be pretty
+excited.
+
+One issue that several attendees voiced concerned the stability of the
+Jupyter API. The Jupyter notebook (formerly IPython Notebook)
+originally intended to provide a web-based graphical interface to the
+IPython command line environment. This was accomplished via
+JavaScript. This JavaScript front end was never designed with *user*
+extensibility in mind, but as people started using it they hacked
+extensions into the JavaScript front end, as well as the IPython back
+end many of the tools surrounding the Jupyter environment (such as
+nbconvert). Several attendees lamented that the front end API is not
+stable, because it was never intended to be stable. In response, the
+Jupyter developers committed to clearly identifying the portions of
+the API that are intended to be stable, and the portions that can
+change at any time. Additionally, JupyterLab, and its front end
+jupyter.js, are designed to be completely customizable bu the user,
+and will provide a stable interface for adding custom plugins.
+
+- open to communication with users via GitHub
 - very open to working with new people to develop new capabilities in
-  ipython and jupyterlab
+  iPython and JupyterLab
 - Notes on [Google Docs](http://tinyurl.com/jupyter-bof-2016)
-- After JupyterLab, next step is real-time collaboration
+
+One of the attendees asked what the Jupyter team's ideas are for their
+next steps after JupyterLab is fully released. The lead developer said
+his next goal will be real-time collaboration in JupyterLab. This will
+allow multiple people to edit a notebook or some other JupyterLab
+object in real time, similar to the way Google Docs allows multiple
+people to edit a document at the same time. He said the major
+challenges will be combining real-time collaboration with integration
+with version control systems, such as Git, and developing a real-time
+system that works seamlessly across all standard and custom
+plugins. He said a primary goal of Jupyter is to make all plugins
+operate with a similar experience for the user, and the real-time
+system will have to allow for this as well.
+
 
 
 Conclusions
