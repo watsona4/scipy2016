@@ -1168,24 +1168,26 @@ Technology-Kharagpur)
 > chose C++, benchmarks, and examples of usage from Python (SymPy and
 > Sage), Ruby and Julia.
 
-- The presenter is the author of SymPy
-- Library written in C++, with thin wrappers for Python, Ruby, Julia,
-  and Haskell
-- Goal was to be fastest library, and serve as core for SymPy
-- SymPy can be slow for large expressions
-- explored many options to improve performance, but eventually chose
-  C++
-- demoed in pyhon, rupy, and julia, all using jupyter notebooks with
-  different backends
-- SymPy can use SymEngine under the hood, but not all capabilities are
-  yet in SymEngine. The expressions can be mixed and SymPy will still
-  work for stuff not in SymEngine yet
-- Uses Trilinos Teuchos library for reference-counted pointers to
-  prevent memory leaks
-- Benchmarked against GiNaC, sympy, mathematica and maple
-- Not as fast as Maple for polynomials, but faster for more complex
-  operations. Faster than Mathematica for all benchmarks. Much faster
-  than SymPy alone (30x).
+The presenter is the author of SymPy. SymPy can be slow for large or
+complicated expressions, so he wrote a library in C++, called
+SymEngine, that performs the bulk of the work for expression
+simplification, with thin wrappers for Python, Ruby, Julia, and
+Haskell. His goal was to be fastest symvolic manipulation library, and
+serve as core for SymPy. In developing ths library, the presenter
+explored many options to improve performance, but eventually chose
+C++. He demonstrated the tool in Python, Ruby, and Julia, all using
+Jupyter notebooks with different backends.
+
+SymPy can use SymEngine under the hood now, but not all capabilities
+are yet in SymEngine. The expressions can be mixed and SymPy will
+still use the Python implementation for capabilities not yet in
+SymEngine. The library uses the Trilinos Teuchos library for
+reference-counted pointers to prevent memory leaks. He showed
+benchmarks against GiNaC, SymPy, *Mathematica* and Maple. The results
+showed that SymEngine is not as fast as Maple for polynomials, but
+faster for more complex operations; it was signuficantly faster than
+*Mathematica* for all benchmarks, and faster than the pure-Python
+implementation in SymPy by about 30x.
 
 ### Diffing and Merging Jupyter Notebooks with nbdime \[General\]
 
