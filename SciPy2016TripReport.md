@@ -11,7 +11,6 @@ developer sprints, so they will not be discussed in this trip report.
 
 Tutorials
 =========
-
 Attendees were allowed to select from four half-day tutorials, though
 many were coupled into full-day tutorials. The attendee participated
 in the Scientific Python Software Carpentry course and the Machine
@@ -19,7 +18,6 @@ Learning with scikit-learn course. Each of these is summarized below.
 
 Software Carpentry: Scientific Python
 -------------------------------------
-
 > Software Carpentry's mission is to help scientists and engineers get
 > more research done in less time and with less pain by teaching them
 > basic lab skills for scientific computing. This hands-on workshop
@@ -77,7 +75,6 @@ on multiple platforms and multiple configurations.
 
 Machine Learning with scikit-learn
 ----------------------------------
-
 > This tutorial aims to provide an introduction to machine learning
 > and scikit-learn "from the ground up." We will start with core
 > concepts of machine learning, some example uses of machine learning,
@@ -102,7 +99,6 @@ multiprocess configurations using standard Python tools.
 
 Conference Talks
 ================
-
 The conference proper was held July 13&ndash;15. Each day began with a
 keynote address during the first half of the morning, with all
 attendees present. The second half of each morning, as well as each
@@ -112,7 +108,6 @@ discussed below.
 
 Keynote \#1: Altair: Declarative Statistical Visualization in Python
 --------------------------------------------------------------------
-
 (Brian Granger, Associate Professor of Physics, Cal Poly State University)
 
 This speaker is the creator of iPython and the Jupyter ecosystem. He
@@ -148,7 +143,6 @@ utilization by any user.
 
 Keynote \#2: High Performance with Python: Architectures, Approaches, and Applications
 --------------------------------------------------------------------------------------
-
 (Andreas Klöckner, Assistant Professor, University of Illinois at
 Urbana-Champaign)
 
@@ -205,7 +199,6 @@ Intel Xeon Phi, and Numba code.
 
 Keynote \#3: Machine Learning for Social Science
 ------------------------------------------------
-
 (Hanna Wallach, Microsoft Research NYC and Adjunct Associate
 Professor, UMass Amherst)
 
@@ -249,7 +242,6 @@ reinforce biases in society.
 
 Wednesday Sessions
 ------------------
-
 The following talks were presented at the sessions on Wednesday,
 July 13. For each talk, the title is given, with the focus area in
 brackets following the title, and well as the speakers’ names and
@@ -257,7 +249,6 @@ affiliations. Additionally, the provided summary of the talk is shown,
 along with the attendees’ comments.
 
 ### Conduit: A Scientific Data Exchange Library for HPC Simulations \[HPC\]
-
 (Cyrus Harrison, Brian Ryujin, and Adam Kunen, Lawrence Livermore
 National Laboratory)
 
@@ -301,7 +292,6 @@ toolkit should be watched closely to learn from their development
 issues and maturity of the system for potential usage at NNL.
 
 ### Bootstrapping an Open Source Library: How MetPy Got Up and Running with Lazy Developers \[Earth and Space Science\]
-
 (Ryan May, UCAR/Unidata)
 
 > MetPy is an open-source Python package for meteorology, providing
@@ -362,7 +352,6 @@ types of tests that should be automated, should be pursued by the
 computational software community.
 
 ### JupyterHub as an Interactive Supercomputing Gateway \[HPC\]
-
 (Michael Milligan, Minnesota Supercomputing Institute, University of
 Minnesota)
 
@@ -405,7 +394,6 @@ visualization through the proxy for interactive parallel visualization
 tasks.
 
 ### Experiments as Iterators: asyncio in Science \[Reproducibility\]
-
 (Daniel Allan, Thomas Caswell, and Kenneth Lauer, Brookhaven National Lab)
 
 > A key challenge to reproducible data collection is capturing and
@@ -467,7 +455,6 @@ team should research declarative API design further and incorporate it
 into the design of their system.
 
 ### Reproducible, One-Button Workflows with the Jupyter Notebook and SCons \[Reproducibility\]
-
 (Jessica Hamrick, University of California, Berkeley)
 
 > What is the best way to develop analysis code in the Jupyter
@@ -495,7 +482,6 @@ system only ran what was necessary to reflect that change in the
 results, including the results published in the thesis.
 
 ### Proselint: The Linting of Science Prose, and the Science of Prose Linting \[General\]
-
 (Michael Pacer and Jordan Suchow, University of California, Berkeley)
 
 > Writing is notoriously hard, even for the best writers, and it's
@@ -525,7 +511,6 @@ recognizes many *text* formats, so to analyze a Word document or other
 binary formats, it must first be converted to plain text using Pandoc.
 
 ### Reinventing the .whl: New Developments in the Upstream Python Packaging Ecosystem \[General\]
-
 (Nathaniel Smith, UC Berkeley)
 
 > Pip, wheels, and setuptools are the standard tools for installing,
@@ -557,7 +542,6 @@ GCC can now link against Microsoft libraries. This will help in
 distributing package binaries for Windows.
 
 ### Lightning Talks
-
 This session consisted of many short presentations on a variety of
 topics. Many of them highlighted future conferences or logistical
 concerns about this conferences, but one of interest was on
@@ -567,7 +551,6 @@ this trip report.
 
 Thursday Sessions
 -----------------
-
 The following talks were presented at the sessions on Thursday,
 July 14. For each talk, the title is given, with the focus area in
 brackets following the title, and well as the speakers’ names and
@@ -575,7 +558,6 @@ affiliations. Additionally, the provided summary of the talk is shown,
 along with the attendees’ comments.
 
 ### <a name="dask"/>Dask: Parallel and Distributed Computing \[General\]
-
 (Matthew Rocklin and Jim Crist, Continuum Analytics)
 
 > Dask is a pure Python library for parallel and distributed
@@ -616,7 +598,6 @@ modifications. The Lynx developers should look at replacing their
 scheduler package with a Dask wrapper.
 
 ### Communicating Model Results \[Data Science\]
-
 (Bargava Subramanian)
 
 > For a data scientist building predictive models, the following are
@@ -653,7 +634,6 @@ for plotting these types of data at this time, but developers are
 working hard to add R-like capabilities to Python.
 
 ### SymPy Code Generation \[General\]
-
 (Aaron Meurer and Anthony Scopatz, University of South Carolina)
 
 > This talk showcases SymPy’s code generation capabilities. SymPy is
@@ -685,7 +665,6 @@ problem, and a complex n-body pendulum problem. He then inverted the
 pendulum problem to show dynamic control of the pendulum.
 
 ### Integrating Scripting into Commercial Applications \[Case Studies in Industry\]
-
 (Eric Jones, CEO, Enthought)
 
 Commercial customers use many types of commercial off-the-shelf (COTS)
@@ -718,7 +697,6 @@ constructed that can handle large amounts of data efficiently (datasets
 in CanopyGeo can be &gt;1 TB).
 
 ### Out with the Old and in with the New: Embedding Python in Old Fortran HPC Code \[HPC\]
-
 (Brendan Smithyman, 3point Science, University of Western Ontario)
 
 > Seismic Full-Waveform Inversion (FWI) is a field with decades-old
@@ -739,7 +717,6 @@ in CanopyGeo can be &gt;1 TB).
   simpler to integrate new code in an existing solver
 
 ### <a name="conda-forge"/>Community Powered Packaging with conda-forge
-
 (Philip Elson, Met Office)
 
 > Conda has solved the package deployment problem. Users on any of
@@ -812,7 +789,6 @@ for checking recipe standards. Plans include releasing an installer
 for speeding up the build process.
 
 ### GT-Py: Accelerating Numpy programs on CPU & GPU with Minimal Programming Effort \[General\]
-
 (Chi-keung Luk, Intel)
 
 > GT-Py is a newly developed just-in-time compiler that can offload
@@ -851,7 +827,6 @@ Intel Xeon Phi and Altera FPGA GPUs in the future.
 [^Central Processing Unit. A CPU, in contrast to a GPU, is a general-purpose hardware device that it commonly used for computations, in addition to standard computer tasks such as running the operating system and productivity applications. It is typically easy to write code for a CPU, and many compilers exist to optimize software for a particular CPU. CPUs today typically include more than one "core," which is the component that performs the computations, and all the cores on a CPU share some portion of a fast memory buffer. Each core can typically run one process at a time, with each process having one or two threads of computation. A single computer may have one (typical) or many CPUs.]
 
 ### HoloViews: Let your Data Reveal Itself \[Data Science\]
-
 (Philipp Rudiger, Jean-Luc Stevens, and James A. Bednar, Continuum Analytics)
 
 > Data exploration typically involves code for analyzing and
@@ -883,7 +858,6 @@ notebooks, as Matplotlib provides support for exporting vector
 graphics, while Bokeh excels at interactivity.
 
 ### JupyterLab: Building Blocks for Interactive Computing \[Data Science\]
-
 (Brian Granger, Cal Poly State University, Project Jupyter)
 
 > Project Jupyter provides building blocks for interactive and
@@ -947,7 +921,6 @@ developers hope to have a major release before the SciPy 2017
 conference.
 
 ### Lightning Talks (YouTube)
-
 This session consisted of many short presentations on a variety of
 topics, some of which are listed below:
 
@@ -970,7 +943,6 @@ topics, some of which are listed below:
 
 Friday Sessions
 ---------------
-
 The following talks were presented at the sessions on Friday,
 July 15. For each talk, the title is given, with the focus area in
 brackets following the title, and well as the speakers’ names and
@@ -978,7 +950,6 @@ affiliations. Additionally, the provided summary of the talk is shown,
 along with the attendees’ comments.
 
 ### Tell Me Something I Don't Know: Analyzing OkCupid Profiles \[Data Science\]
-
 (Matar Haller, Jaya Narasimhan, and Juan Shishido, University of
 California, Berkeley)
 
@@ -1014,7 +985,6 @@ analysis on the data showed that around 50% of users who didn't
 identify as drug users wrote in a way very similar to drug users.
 
 ### Scaling Up and Out: Programming GPU Clusters with Numba and Dask \[Data Science\]
-
 (Stanley Seibert and Siu Kwan Lam, Continuum Analytics)
 
 > In this talk, we show how Python, Numba, and Dask can be used for
@@ -1063,7 +1033,6 @@ execution to demonstrate Dask's ability to schedule on heterogeneous
 systems.
 
 ### A "BLAS" for Tensors with Portable High Performance \[HPC\]
-
 (Devin Matthews, The University of Texas at Austin)
 
 > Tensor computations are an important kernel in many high-performance
@@ -1103,7 +1072,6 @@ specific purpose and could be modified to use this approach under the
 hood.
 
 ### Launching Python Applications on Peta-scale Massively Parallel Systems \[HPC\]
-
 (Yu Feng, Berkeley Center for Cosmological Physics, Berkeley Institute
 for Data Science)
 
@@ -1155,7 +1123,6 @@ modules, starting up hundreds of thousands of Python sessions in a few
 minutes.
 
 ### SymEngine: A Fast Symbolic Manipulation Library \[General\]
-
 (Ondřej Čertík, Los Alamos National Laboratory, and Isuru Fernando,
 Thilina Rathnayake, and Abhinav Agarwal, Indian Institute of
 Technology-Kharagpur)
@@ -1190,7 +1157,6 @@ faster for more complex operations; it was signuficantly faster than
 implementation in SymPy by about 30x.
 
 ### Diffing and Merging Jupyter Notebooks with nbdime \[General\]
-
 (Min Ragan-Kelley, IPython/Jupyter, Simula Research Lab)
 
 > Jupyter notebooks are JSON documents containing a combination of
@@ -1242,7 +1208,6 @@ needs some interface design work. Once the HTML interface is complete,
 the Jupyter team will work with GitHub to integrate nbdime into GitHub.
 
 ### Lightning Talks (YouTube)
-
 This session consisted of many short presentations on a variety of
 topics, some of which are listed below:
 
@@ -1271,7 +1236,6 @@ topics, some of which are listed below:
 
 Birds of a Feather Sessions
 ===========================
-
 In an effort to increase community building, SciPy emphasizes the
 birds of a feather sessions (BoFs) to discuss primary or
 tangentially related topics in an interactive setting. These sessions
@@ -1281,7 +1245,6 @@ are summarized below.
 
 Distributed Computing BoF (Wednesday)
 -------------------------------------
-
 - What tools are available in Python
 - Storage requirements
 - Moving computations to data
@@ -1299,7 +1262,6 @@ Distributed Computing BoF (Wednesday)
 
 Matplotlib BoF (Thursday)
 -------------------------
-
 - 2.0 beta release out; only change is the default color map, and
   couple bug fixes
   - To get old styles:
@@ -1314,7 +1276,6 @@ Matplotlib BoF (Thursday)
 
 Jupyter BoF (Friday)
 -------------------
-
 - Around the room with introductions and interests
 - Dediated to improving stability for future extensions
 - Will make better distinction between public stable APIs and
@@ -1328,7 +1289,6 @@ Jupyter BoF (Friday)
 
 Conclusions
 ===========
-
 - Can we open-source Lynx?
   - Separate subpackages based on capabilities (i.e., configuration
     system, materials, mesh, and coupling; keep nuclear internal?)
