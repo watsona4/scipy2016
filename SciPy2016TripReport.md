@@ -1074,7 +1074,7 @@ interface of the Numpy `einsum` function, which was written for this
 specific purpose and could be modified to use this approach under the
 hood.
 
-### Launching Python Applications on Peta-scale Massively Parallel Systems \[HPC\]
+### <a name="peta"/>Launching Python Applications on Peta-scale Massively Parallel Systems \[HPC\]
 (Yu Feng, Berkeley Center for Cosmological Physics, Berkeley Institute
 for Data Science)
 
@@ -1247,20 +1247,39 @@ are summarized below.
 
 Distributed Computing BoF (Wednesday)
 -------------------------------------
-- What tools are available in Python
-- Storage requirements
-- Moving computations to data
-- H5group looking at alternatives for different types of data
-- Workflow tools for Python
-- Conda to replace wheelhouse system?
-  - Most people work within a conda environment!
-- Spark(c)?
-- S3 much better than HDFS
-  - Can we use this model for FY17?
-- The author of Dask talked about solutions to ther peoples problems;
-  the way he sopke makes me think Dask is lynx.coupling!
-- See [section on Dask](#dask)
-- Docker??
+This BoF was attended to gain insight into what parallel programming
+paradigms are is use throughout the community, and learn about what
+tools are available for those paradigms. The community employs two
+types of distributed computing: HPC computing using MPI, and cloud
+computing using, primarily, Hadoop or Spark. Both sets of communities,
+however, have similar concerns and goals: dealing with large amounts
+of data that cannot fit on a single computer, and moving their
+computations to that data for efficiency.
+
+HPC systems typically use shared file systems, primarily Lustre, which
+come with their own sets of problems (see [this talk](#peta) for an
+example). Many of the tools used on these systems also use HDF5 for
+parallel file-base input and output. A developer from the HDF Group,
+the developers of HDF5, noted that the HDF Group is looking at using
+alternatives to file-based storage, including S3 and HDFS, both used
+in the cloud computing community.
+
+Most developers at the session use Anaconda for Python package
+management. Anaconda seems well-suited to deploying custom
+environments on remote machines, and is likely a good candidate to
+replace the "wheelhouse" system currently used by Lynx. This would
+provide a more maintainable and stable system across all HPCs at NNL
+than the current system. Additionally, most of the cloud computing
+community uses Docker containers for deployment to remote
+machines. Though this approach is very different from the systems used
+at NNL, and the Common Environment system currently in development, it
+does provide a much more stable and configurable approach to HPC, and
+can provide modes across clusters.
+
+Finally, the author of Dask talked about solutions to their customers'
+problems. Dask looks like a great system to replace the ZMQ-based
+system used by Lynx for job control and scheduling. More on Dask is
+presented [elsewhere](#dask) in this trip report.
 
 Matplotlib BoF (Thursday)
 -------------------------
