@@ -114,8 +114,8 @@ discussed below.
 --------------------------------------------------------------------------------------
 (Brian Granger, Associate Professor of Physics, Cal Poly State University)
 
-This speaker is the creator of iPython and the Jupyter ecosystem. He
-announced that iPython v5.0 has been released and will be the last
+This speaker is the creator of IPython and the Jupyter ecosystem. He
+announced that IPython v5.0 has been released and will be the last
 version to support Python 2, with many cheers from the audience. He
 also walked through a list of notable features of the Jupyter system,
 including the JupyterLab project, which may serve as the basis for a
@@ -333,7 +333,7 @@ be brought in. The testing systems he uses are summarized below:
 - Sphinx is used to build the documentation, but can’t check for
   correctness, only the presence of Sphinx warnings; users are relied
   upon for correctness and grammar checking.
-- Nbconvert can run example iPython notebooks, so it is used to test
+- Nbconvert can run example IPython notebooks, so it is used to test
   examples and tutorials.
 - The Pytest plugin pytest-mpl performs image comparison tests and is
   used to test visualization output.
@@ -941,7 +941,7 @@ topics, some of which are listed below:
 - Steno3D for interactive, web-based 3D concurrent engineering
 - HDF5 v10.0: Single Writer/Multiple Reader capability, virtual
   datasets introduced
-- Dask can now start iPython on remote workers to inspect and
+- Dask can now start IPython on remote workers to inspect and
   manipulate remote data
 
 Friday Sessions
@@ -1322,7 +1322,7 @@ and will provide a stable interface for adding custom plugins.
 
 - open to communication with users via GitHub
 - very open to working with new people to develop new capabilities in
-  iPython and JupyterLab
+  IPython and JupyterLab
 - Notes on [Google Docs](http://tinyurl.com/jupyter-bof-2016)
 
 One of the attendees asked what the Jupyter team's ideas are for their
