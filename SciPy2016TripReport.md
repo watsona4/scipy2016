@@ -1324,6 +1324,10 @@ and will provide a stable interface for adding custom plugins.
 - very open to working with new people to develop new capabilities in
   IPython and JupyterLab
 - Notes on [Google Docs](http://tinyurl.com/jupyter-bof-2016)
+- nbgrader: under development; intended for instructors to use
+  notebooks as assignments and exams, but can be used to format
+  notebooks for presentation to someone who's not coding literate
+- planning first conference, JupyterCon, tbd
 
 One of the attendees asked what the Jupyter team's ideas are for their
 next steps after JupyterLab is fully released. The lead developer said
