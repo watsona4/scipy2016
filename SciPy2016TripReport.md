@@ -1255,19 +1255,19 @@ topics, some of which are listed below:
 - Genapp: tool developed by NIST to assist non
   computer&ndash;scientists in creating simple web-based GUIs for
   collaboration
-- anagram.py: uses metaprogramming to determine anagrams
+- anagram.py: uses metaprogramming to determine anagrams on import
 - Numpy v1.11 new features
 - Tracking thunderstorms in areas with poor radar coverage by tracking
-  lightning data.
+  lightning data
 - *Elegant SciPy*: new book that teaches how you use SciPy to write
   elegant scientific software
-- Teaser about Enthought Canopy integration with LabView
+- Teaser about future Enthought Canopy integration with LabView
 - Gadfly: used Pandas and Numba to store and analyze large
   astrophysical datasets
 - Python CMake Build System: CMake-based build system for Python
   interpreter
 - Generated functions in Python using Numba
-- ipywidgets: interactive widgets in Jupyter notebooks
+- IPyWidgets: interactive widgets in Jupyter notebooks
 
 Birds of a Feather Sessions
 ===========================
