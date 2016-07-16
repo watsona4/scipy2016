@@ -863,17 +863,24 @@ Intel Xeon Phi and Altera FPGA GPUs in the future.
 > Jupyter Notebooks to allow interactive exploration via widgets and
 > various plotting backends including matplotlib and bokeh.
 
-- Dynamic plotting to allow exploration of data, contrasted to
-  matplotlib, with few lines of code
-- Can add additional dimensions to plots by faceting, overlays,
-  dropdowns, sliders, and combinations thereof by chaining commands
-- Can compare and combine data inline, and provides interactive
-  inspection in real time
-- Can interface with columnar and grid-based data
-- Can overlay drawings over plots with interactivity preserved
-- Can switch backends (like bokeh for ineractivity and matplotlib for
-  publication)
-- Have extension called GeoViews for plotting on Earth’s surface
+The presenters lamented that, although most Python visualization
+packages generate very nice visualizations, their interfaces require
+sometimes many lines of code to use. They wanted a system that would
+allow dynamic plotting of data to allow exploration that didn't
+require much code to use.
+
+HoloViews is a new Python package that provides such an interface. The
+input is relatively simple, allowing for powerful, chained commands
+with very little coding. HoloViews allows adding of additional
+dimensions to plots by faceting, overlays, dropdowns, sliders, and
+combinations thereof by simply chaining commands. It can compare and
+combine data inline, and provides interactive inspection in real
+time. Additionally, HoloViews allows overlaying of drawings over
+plots, while preserving interactivity. HoloViews is only a front-end
+to other popular plotting packages, such as Matplotlib and Bokeh, and
+these backends can be switched easily. This is useful when publishing
+notebooks, as Matplotlib provides support for exporting vector
+graphics, while Bokeh excels at interactivity.
 
 ### JupyterLab: Building Blocks for Interactive Computing \[Data Science\]
 
