@@ -1,13 +1,13 @@
 This trip report summarize the SciPy 2016 conference. The conference
-was held in Austin, Texas, July 11&ndash;17, 2016. SciPy 2016 was the
-15th annual Scientific Computing with Python conference. The annual
-SciPy Conference brings together over 650 participants from industry,
+was held in Austin, Texas, July 11–17, 2016. SciPy 2016 was the 15th
+annual Scientific Computing with Python conference. The annual SciPy
+Conference brings together over 650 participants from industry,
 academia, and government to showcase their latest projects, learn from
 skilled users and developers, and collaborate on code development. The
-full program consisted of two days of tutorials (July 11&ndash;12),
-three days of talks (July 13&ndash;15), and two days of developer
-sprints (July 16&ndash;17). The attendee did not participate in the
-developer sprints, so they will not be discussed in this trip report.
+full program consisted of two days of tutorials (July 11–12), three
+days of talks (July 13–15), and two days of developer sprints (July
+16–17). The attendee did not participate in the developer sprints, so
+they will not be discussed in this trip report.
 
 Tutorials
 =========
@@ -99,7 +99,7 @@ multiprocess configurations using standard Python tools.
 
 Conference Talks
 ================
-The conference proper was held July 13&ndash;15. Each day began with a
+The conference proper was held July 13–15. Each day began with a
 keynote address during the first half of the morning, with all
 attendees present. The second half of each morning, as well as each
 afternoon, consisted of three parallel sessions with different topical
@@ -404,8 +404,8 @@ tasks.
 > and rich metadata for streaming, live analysis.
 >
 > The project is developed at the National Synchrotron Light Source
-> II&mdash;a Department of Energy X-ray user facility. The X-ray beam
-> is used by internal scientific staff and external visitors from
+> II—a Department of Energy X-ray user facility. The X-ray beam is
+> used by internal scientific staff and external visitors from
 > academia and industry. These users employ Bluesky in a broad range
 > of experiments, ranging from well-defined, established techniques to
 > ad hoc, improvised experiments.
@@ -484,20 +484,20 @@ results, including the results published in the thesis.
 ### Proselint: The Linting of Science Prose, and the Science of Prose Linting \[General\]
 (Michael Pacer and Jordan Suchow, University of California, Berkeley)
 
-> Writing is notoriously hard, even for the best writers, and it's
-> not for lack of good advice&mdash;a tremendous amount of knowledge
-> is strewn across usage guides, dictionaries, technical manuals,
-> essays, pamphlets, websites, and the hearts and minds of great
-> authors and editors. But this knowledge is trapped, waiting to be
-> extracted and transformed. We built Proselint, a Python-based linter
-> for prose. Proselint identifies violations of expert style and usage
+> Writing is notoriously hard, even for the best writers, and it's not
+> for lack of good advice—a tremendous amount of knowledge is strewn
+> across usage guides, dictionaries, technical manuals, essays,
+> pamphlets, websites, and the hearts and minds of great authors and
+> editors. But this knowledge is trapped, waiting to be extracted and
+> transformed. We built Proselint, a Python-based linter for
+> prose. Proselint identifies violations of expert style and usage
 > guidelines. Proselint is open-source software released under the BSD
 > license and works with Python 2 and 3. It runs as a command-line
 > utility or editor plugin (e.g., Sublime Text, Atom, Vim, Emacs) and
 > outputs advice in standard formats (e.g., JSON). Though in its
-> infancy&mdash;perhaps 2% of what it could be&mdash;Proselint already
-> includes modules addressing: redundancy, jargon, illogic, clichés,
-> sexism, misspelling, inconsistency, misuse of symbols, malapropisms,
+> infancy—perhaps 2% of what it could be—Proselint already includes
+> modules addressing: redundancy, jargon, illogic, clichés, sexism,
+> misspelling, inconsistency, misuse of symbols, malapropisms,
 > oxymorons, security gaffes, hedging, apologizing,
 > pretension. Proselint can be seen as both a language tool for
 > scientists and a tool for language science. On the one hand, it
@@ -514,7 +514,7 @@ binary formats, it must first be converted to plain text using Pandoc.
 (Nathaniel Smith, UC Berkeley)
 
 > Pip, wheels, and setuptools are the standard tools for installing,
-> distributing, and building Python packages&mdash;which means that if
+> distributing, and building Python packages—which means that if
 > you're a user or package author then you're probably using them at
 > least some of the time, even though when it comes to handling
 > scientific packages, they've traditionally been a major source of
@@ -719,9 +719,9 @@ in CanopyGeo can be &gt;1 TB).
 ### <a name="conda-forge"/>Community Powered Packaging with conda-forge
 (Philip Elson, Met Office)
 
-> Conda has solved the package deployment problem. Users on any of
-> the major operating systems can now use complex libraries by simply
-> conda installing them&mdash;no need for a compiler, and typically no
+> Conda has solved the package deployment problem. Users on any of the
+> major operating systems can now use complex libraries by simply
+> conda installing them—no need for a compiler, and typically no
 > requirement for users to install packages at the operating system
 > level.
 >
@@ -742,21 +742,20 @@ in CanopyGeo can be &gt;1 TB).
 > proved to be of valuable in fixing packages built by Continuum
 > themselves.
 >
-> There remained one major problem with the model
-> though&mdash;repositories were managing growing numbers of conda
-> recipes without clear scope, resulting in recipe redundancy,
-> duplication and inconsistencies in the community. Growing a single
-> repository of many conda-recipes failed to scale in other ways too;
-> it wasn't possible to give individual permissions on specific
-> packages, and it wasn't possible to build every package for each
-> commit of the repository.
+> There remained one major problem with the model though—repositories
+> were managing growing numbers of conda recipes without clear scope,
+> resulting in recipe redundancy, duplication and inconsistencies in
+> the community. Growing a single repository of many conda-recipes
+> failed to scale in other ways too; it wasn't possible to give
+> individual permissions on specific packages, and it wasn't possible
+> to build every package for each commit of the repository.
 >
 > SciPy 2015 proved to be the ideal platform to refine and develop a
 > plan to solve these issues, and to scale the conda package building
 > pipeline out to a wider community of packagers.
 >
-> In this talk, I will present conda-forge&mdash;an ambitious project
-> which has grown into a thriving community with openness and
+> In this talk, I will present conda-forge—an ambitious project which
+> has grown into a thriving community with openness and
 > reproducibility at its core. conda-forge is a medley of
 > technologies, including CI automation, Heroku, gitpython, pygithub,
 > requests, GitHub webhooks, conda\[-build\[-all\]\] and Docker. I
@@ -820,9 +819,9 @@ be used to target optimization for CPUs as well, both serially and in
 parallel. At this time, GT-Py provides `pragma`s for looping and
 vectorization, and `pragma`s to replace some common standard library
 functions as well. The speaker showed *significant* performance
-increase (2&ndash;10,000x speedup) even on multi-core CPUs. The first
-public release of GT-Py is scheduled for the fall, and will support
-Intel Xeon Phi and Altera FPGA GPUs in the future.
+increase (2–10,000x speedup) even on multi-core CPUs. The first public
+release of GT-Py is scheduled for the fall, and will support Intel
+Xeon Phi and Altera FPGA GPUs in the future.
 
 [^Central Processing Unit. A CPU, in contrast to a GPU, is a general-purpose hardware device that it commonly used for computations, in addition to standard computer tasks such as running the operating system and productivity applications. It is typically easy to write code for a CPU, and many compilers exist to optimize software for a particular CPU. CPUs today typically include more than one "core," which is the component that performs the computations, and all the cores on a CPU share some portion of a fast memory buffer. Each core can typically run one process at a time, with each process having one or two threads of computation. A single computer may have one (typical) or many CPUs.]
 
@@ -1217,9 +1216,8 @@ topics, some of which are listed below:
 - Mercurial: written in Python, demo of rebasing-like capability,
   concept of draft (rewritable) commits vs. public (non-rewritable)
   commits
-- Genapp: tool developed by NIST to assist non
-  computer&ndash;scientists in creating simple web-based GUIs for
-  collaboration
+- Genapp: tool developed by NIST to assist non computer–scientists in
+  creating simple web-based GUIs for collaboration
 - anagram.py: uses metaprogramming to determine anagrams on import
 - Numpy v1.11 new features
 - Tracking thunderstorms in areas with poor radar coverage by tracking
