@@ -710,15 +710,15 @@ in CanopyGeo can be &gt;1 TB).
 > override or replace portions of the Fortran source code with Python,
 > to enable rapid development of new algorithms and methods.
 
-- Compared writing "Hello, world!" in Python, F77, C, and Cython
-- Showed how they can all call each other
-- Motivation was to have students write new code in Python, and
-  embedding that code in the legacy Fortran code
-- Wrote a C API that can be called by Fortran, that initializes the
-  Python interpreter, sends data from Fortran to Python, runs Python
-  functions, and destroys the interpreter
-- Nothing really beyond what we have done in Lynx, but its a little
-  simpler to integrate new code in an existing solver
+The presenter compared writing `"Hello, world!"` in Python, Fortran
+77, C, and Cython, and showed how the different languages can all
+call each other. His motivation was to have his students write new
+code in Python, and embed that code in the legacy Fortran code. To
+facilitate this, he wrote a C API that can be called by Fortran, that
+initializes the Python interpreter, sends data from Fortran to Python,
+runs Python functions, and destroys the interpreter. This is the
+inverse of the approach we have taken in Lynx, and his wrappers make
+integrating new code into the existing solver easy.
 
 ### <a name="conda-forge"/>Community Powered Packaging with conda-forge
 (Philip Elson, Met Office)
