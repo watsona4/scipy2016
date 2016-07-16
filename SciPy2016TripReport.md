@@ -959,11 +959,12 @@ topics, some of which are listed below:
 - Voronoi tessellation on large data sets using CGAL, Cython, mpi4py,
   and kd-tree
 - Intel Python distribution: accelerated Python using Intel libraries;
-  working closely with CA to be Conda compatible (Intel channel on
-  anaconda.org); improved performance with MPI4Py, PySpark, and PyDAAL
+  working closely with Continuum Analytics to be Conda compatible
+  (Intel channel on anaconda.org); improved performance with MPI4Py,
+  PySpark, and PyDAAL
 - Steno3D for interactive, web-based 3D concurrent engineering
-- HDF5 v10: Single Writer/Multiple Reader capability, virtual datasets
-  introduced
+- HDF5 v10.0: Single Writer/Multiple Reader capability, virtual
+  datasets introduced
 - Dask can now start iPython on remote workers to inspect and
   manipulate remote data
 
