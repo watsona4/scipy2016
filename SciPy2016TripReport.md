@@ -1342,30 +1342,83 @@ plugins. He said a primary goal of Jupyter is to make all plugins
 operate with a similar experience for the user, and the real-time
 system will have to allow for this as well.
 
-
-
 Conclusions
 ===========
-- Can we open-source Lynx?
-  - Separate subpackages based on capabilities (i.e., configuration
-    system, materials, mesh, and coupling; keep nuclear internal?)
-  - Extract classified and sensitive (i.e., export controlled) code
-    out of system (TRANSX and Bengal)
-  - Have internal repo as primary; periodically (patch releases?) push
-    updates to GitHub. Fetch updates from GitHub whenever a pull
-    request is approved, or daily.
-  - Justification: collaboration among peers at other labs, easier
-    integration with other scientific packages, presentation to
-    outside community and usage by students and others
-  - Free developer resource
-  - Still able to maintain quality and configuration control
-  - Contributions possible remotely by NNL Lynx developers
-  - Concerns:
-	- Classification: review of all code by ADC before release
-	- Information Security: blanket PU approval with manager sign-off?
-	- Legal/Licensing: ??? (talk to lawyer)
-	- Others?
-- Convert to Anaconda for management of software stack
-- All presentations are available on
-  [Enthought YouTube channel](https://www.youtube.com/playlist?list=PLYx7XA2nY5Gf37zYZMw6OqGFRPjB1jCy6).
-- Spark
+This conference was extremely worthwhile, and members of the NNL
+Python community should attend every year. Although it is a long
+conference, participation in all aspects of the conference (tutorials,
+the talks, the BoFs, and the Sprints) is recommended. Although the
+Sprints portion may seem overwhelming, the point was made throughout
+the week that they are intended for Python experts and newbies alike,
+so everyone is welcome.
+
+The environment at the conference was welcoming to new attendees, and
+for about half of the attendees this was their first time attending
+SciPy. The average age of the community is much younger than other
+professional conferences commonly attended, but many of the attendees
+were nearing retirement age, some even older than that. But regardless
+of the age of the attendees, all seemed to be very much open to new
+ideas and using modern technology. Most embrace the open source
+software development concepts and practices.
+
+Another observation about the conference is that the schedule was
+flexible. The presentations were nominally 30 minutes, with 5 minutes
+for questions (except for the Lightning Talks, which were only 5
+minutes), but the session chairs allowed the discussion with the
+audience to influence the schedule, and everyone seemed to be okay with
+this. It made for a relaxing atmosphere, and tardiness was not
+encountered.
+
+There are two main takeaways of a technical nature. First, Python
+developers at NNL and the SciSHARE community should seriously consider
+adopting Anaconda for management of the internal Python
+stack. Anaconda provides most of the same packages as PyPI, but they
+are built in a consistent manner, for every platform, and function
+together seamlessly. Additionally, conda-forge allows Anaconda users
+to contribute to the build process for their packages of interest and
+correct any problems they may run into. This would allow developers to
+have a stable and reliable set of Python packages for their projects.
+
+There were many project presented that are of interest to the NNL
+Python community in general, but the Lynx community particularly. Many
+open source projects exits that are solving some of the issues Lynx
+developers face: JupyterHub could serve as a web-based Common Environment
+job submission system; Dask performs intelligent, flexible, and robust
+task scheduling on distributed systems; JupyterLab can serve as a
+platform for development of a concurrent engineering system; the
+capabilities of scikit-learn and work on integration with R can help
+the Big Data efforts; and there are many more. So far, developers have
+only researched the options on their own, and figured out how to
+integrate these open source technologies into their work. This
+approach is functional, but inefficient and waste's developer
+resources. An alternative would be open-source development of
+Lynx.
+
+Open-sourcing Lynx would involve several technical and management
+steps, most notably the approval of Naval Reactors, but would
+culminate in creating a GitHub repository to host NNL software
+projects. There are many advantages to this approach, including
+no-cost contributions from developers at other labs and industry,
+simplifying and promoting official collaboration with other labs, ease
+of presentation and discussion on coding issues at conferences and
+tutorials, and simple access for students and Rickover Fellows. A
+process could easily be developed wherein the Lynx developers at NNL
+could maintain quality and configuration control, both of internal and
+external versions of Lynx, and isolate classified and sensitive
+content that would not be approved for public release. The Lynx
+developers and management team should have a serious discussion about
+pursuing this approach, and interacting more with external developers
+at future venues.
+
+In conclusion, this was a very good conference and representatives of
+NNL should definitely attend in the future. A reasonable
+recommendation would be two or three attendees per year, consisting of
+both new and seasoned SciPy attendees. These attendees should plan on
+participating in all aspects of the conference: tutorials,
+presentations, BoFs, and Sprints, and should give presentations when
+appropriate.
+
+All presentations are freely-provided to the public on the
+[Enthought YouTube channel](https://www.youtube.com/playlist?list=PLYx7XA2nY5Gf37zYZMw6OqGFRPjB1jCy6). The
+presentations discussed in this trip report are available internally
+and accessible from the Lynx website.
