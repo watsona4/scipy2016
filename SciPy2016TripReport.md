@@ -1296,6 +1296,20 @@ Matplotlib BoF (Thursday)
   - Traitlets: will allow export to multiple formats (altair
     integration)
 
+Jupytr BoF (Friday)
+-------------------
+
+- Around the room with introductions and interests
+- Dediated to improving stability for future extensions
+- Will make better distinction between public stable APIs and
+  non-public APIs
+- open to communication wth users via github
+- very open to working with new people to develop new capabilities in
+  ipython and jupyterlab
+- Notes on [Google Docs](http://tinyurl.com/jupyter-bof-2016)
+- After JupyterLab, next step is real-time collaboration
+
+
 Conclusions
 ===========
 
