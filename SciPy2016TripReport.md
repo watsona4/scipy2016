@@ -39,9 +39,9 @@ portion was minimized to make more time for version control and
 testing. The next topic was source control with Git. The presenters
 describes the basis of the Git system, using some simple examples to
 demonstrate Git to new users. They then had the students set up
-accounts on Github, and demonstrated the use of Github for
+accounts on GitHub, and demonstrated the use of GitHub for
 collaborative development. This included discussions about code
-reviews via Github and pull requests.
+reviews via GitHub and pull requests.
 
 The afternoon centered around testing in Python, using assertions for
 preconditions and Pytest for unit and integration tests. For
@@ -57,12 +57,12 @@ it’s not tested, it’s broken."
 At NNL-Knolls, many Python and non-Python projects already use the Git
 version control system successfully. The Lynx project uses Microsoft's
 Team Foundation Server (TFS) in a similar manner as many open source
-projects use Github. TFS lags behind Github in the tools it provides
+projects use GitHub. TFS lags behind GitHub in the tools it provides
 for collaborative development, but is further along in integration
 with work planning tools. It would be nice to provide an installation
-of Github Enterprise for use in NNL, but due to the difficulty in
+of GitHub Enterprise for use in NNL, but due to the difficulty in
 bringing in and hosting outside software, TFS will suffice for most
-needs. As Github is further developed, it would be worthwhile to
+needs. As GitHub is further developed, it would be worthwhile to
 monitor its development and see if it’s a tool NNL should pursue.
 
 Likewise, the Lynx project uses Pytest extensively for unit and
@@ -72,7 +72,7 @@ provided at NNL for continuous integration testing, but developers
 should consider providing Travis CI as well. This would allow for a
 cleaner test environment and increased separation between the test
 environment and the production HPC systems. Additionally, Travis CI
-provides integration with Github, as well as the capability of testing
+provides integration with GitHub, as well as the capability of testing
 on multiple platforms and multiple configurations.
 
 Machine Learning with scikit-learn
@@ -127,7 +127,7 @@ Altair. His premise is that visualization in Python is painful, with
 many choices of packages that have non-overlapping capabilities. These
 packages require (sometimes significant) programming expertise to
 perform even the simplest task. Altair seeks to simplify these choices
-by introducing a grammar for visualisation that abstracts a wide range
+by introducing a grammar for visualization that abstracts a wide range
 of visualization concepts: Data, Transforms, Scales, Guides, and
 Marks. It uses a declarative Application Programming Interface (API),
 specifying *what* should be done, instead of *how* it should be
@@ -211,7 +211,7 @@ Professor, UMass Amherst)
 
 The speaker is a social computer scientist who started programming
 using MATLAB, then switched to C/C++ and Java, but ended up in Python
-because it made programming much easer and less time consuming. She
+because it made programming much easier and less time consuming. She
 started looking at using machine learning to analyze complex social
 science problems. The speaker separates data analysis into two
 categories: prediction (computer scientists) and explanation (social
@@ -234,7 +234,7 @@ well as the department from which the document originated.
 The second example dealt with international relations. Historically,
 political scientists manually created databases of international
 events, which were used to study international relationships. These
-databases are time consuming to contruct, and therefore very
+databases are time consuming to construct, and therefore very
 restrictive. Recently, machine learning has been used to automate
 collection and categorization of all this data. She used a similar
 algorithm as above, but this time decomposing n-dimensional tensors to
@@ -266,7 +266,7 @@ National Laboratory)
 > intuitive model for describing hierarchical scientific data in C++,
 > C, Fortran, and Python. Conduit supports in-core data coupling
 > between packages, serialization, and I/O tasks. Conduit leverages
-> ideas from JSON and NumPy to provide a cross-language data access
+> ideas from JSON and Numpy to provide a cross-language data access
 > API that simplifies sharing data in the HPC ecosystem. For SciPy
 > 2016, an important focus of our talk will be Python support in
 > Conduit and how positive experiences using Python motivated our
@@ -318,7 +318,7 @@ issues and maturity of the system for potential usage at NNL.
 > others to use those to support their own development efforts.
 
 This talk was essentially a summary of all the open-source testing
-tools provided by Github, and the ones the presenter found useful in
+tools provided by GitHub, and the ones the presenter found useful in
 his project. None of these tools are available at NNL, but they should
 be brought in. The testing systems he uses are summarized below:
 
@@ -329,8 +329,8 @@ be brought in. The testing systems he uses are summarized below:
   - He also includes special tests using the minimum supported
     versions of both Python and dependent packages to determine when
     he should bump versions. For example, if MetPy requires Numpy v1.8
-    or greater, he has a test that specifically uses NumPy v1.8. When
-    the test fails, he can change that requirement to use NumPy 1.9 as
+    or greater, he has a test that specifically uses Numpy v1.8. When
+    the test fails, he can change that requirement to use Numpy 1.9 as
     the minimum supported version.
   - He also has tests that run the developmental versions of Python
     and all required packages. These tests don’t dictate failure of
@@ -348,9 +348,9 @@ be brought in. The testing systems he uses are summarized below:
   in coverage.
 - Quantified Code and Codify are used for for static code checking,
   similar to Pylint and the PEP-8 checkers. These provide web
-  interfaces and Github integration.
+  interfaces and GitHub integration.
 - Versioneer is a Python package that synchronizes version strings. It
-  ensures the version string generated by a release from Github
+  ensures the version string generated by a release from GitHub
   matches that in the Python Package Index and the distribution of the
   package.
 
@@ -400,7 +400,7 @@ Other tools used at the MSI that could be useful on our HPCs include
 Puppet for dynamic configuration management and Splunk for logging and
 tracking resource usage. The next steps include auto-population of
 configuration options, environment management using Modules that works
-with Python, integration with iPyParallel, and tunnelling
+with Python, integration with iPyParallel, and tunneling
 visualization through the proxy for interactive parallel visualization
 tasks.
 
@@ -418,7 +418,7 @@ tasks.
 > The project is developed at the National Synchrotron Light Source
 > II&mdash;a Department of Energy X-ray user facility. The X-ray beam
 > is used by internal scientific staff and external visitors from
-> academia and industry. These users employ bluesky in a broad range
+> academia and industry. These users employ Bluesky in a broad range
 > of experiments, ranging from well-defined, established techniques to
 > ad hoc, improvised experiments.
 >
@@ -439,7 +439,7 @@ tasks.
 > documents, or fed into a real-time processing pipeline.
 >
 > Bluesky employs Python language features not as commonly used in
-> the scipy community: generators, coroutines, and the asyncio event
+> the SciPy community: generators, coroutines, and the asyncio event
 > loop. For example, generators provide a parsimonious syntax for
 > expressing sequential steps of an experiment. Coroutines can express
 > adaptive logic, such as spacing measurements adaptively in response
@@ -450,7 +450,7 @@ tasks.
 > and built-in data structures, avoiding a proliferation of special
 > classes or a sprawling vocabulary.
 >
-> By integrating cleanly with the scipy stack, bluesky empowers
+> By integrating cleanly with the SciPy stack, bluesky empowers
 > scientists to build sophisticated experimental control logic. While
 > currently deployed for X-ray experiments at NSLS-II, bluesky is
 > developed in the open and should be useful for scientific experiment
@@ -466,7 +466,7 @@ which makes the user-provided routines much simpler to write. The Lynx
 team should research declarative API design further and incorporate it
 into the design of their system.
 
-### Reproducible, One-Button Workflows with the Jupyter Notebook and Scons \[Reproducibility\]
+### Reproducible, One-Button Workflows with the Jupyter Notebook and SCons \[Reproducibility\]
 
 (Jessica Hamrick, University of California, Berkeley)
 
@@ -542,11 +542,11 @@ binary formats, it must first be converted to plain text using Pandoc.
 > the latest updates on our effort to drive a stake through the heart
 > of setup.py files and replace them with something better.
 
-This presentation updated th status of the Wheel system and how it
+This presentation updates the status of the Wheel system and how it
 fits into the standard Python packaging system. The Python Package
-Index (PyPI) is the standard way of optaining pre-built package
-distributions, and now has the ability to distribute pckages
-specifically for Liunx. This allows packages that have extensive
+Index (PyPI) is the standard way of obtaining pre-built package
+distributions, and now has the ability to distribute packages
+specifically for Linux. This allows packages that have extensive
 external dependencies (like Numpy's dependency on BLAS) to include
 those dependent libraries in a binary distribution. Additionally, the
 presenter was curious why Microsoft libraries couldn't be linked from
@@ -579,7 +579,7 @@ along with the attendees’ comments.
 (Matthew Rocklin and Jim Crist, Continuum Analytics)
 
 > Dask is a pure Python library for parallel and distributed
-> computing. Last year Dask parallelized NumPy and Pandas computations
+> computing. Last year Dask parallelized Numpy and Pandas computations
 > on multi-core workstations. This year we discuss using Dask to
 > design custom algorithms and execute those algorithms efficiently on
 > a cluster. This talk discusses Pythonic APIs for parallel algorithm
@@ -672,12 +672,12 @@ working hard to add R-like capabilities to Python.
 > sympybotics.
 
 SymPy is a Python package that does symbolic mathematics, similar to
-*Mathematica*. When used in upyter notebooks, SymPy results are
+*Mathematica*. When used in Jupyter notebooks, SymPy results are
 returned as MathJax (or LaTeX) output, displaying the result in purely
 symbolic form. The presented showed a new capability of exporting
 symbolic math as source code (similar to `CForm` in
 *Mathematica*). This capability allows for mathematical optimizations
-in addition to compiler optmizations. At ths time, these matematical
+in addition to compiler optimizations. At this time, these mathematical
 optimizations are limited to reducing the number of operations, and
 not yet extended to more complex optimizations. The presenter
 demonstrated this by symbolically solving a simple decay chain
@@ -690,7 +690,7 @@ pendulum problem to show dynamic control of the pendulum.
 
 Commercial customers use many types of commercial off-the-shelf (COTS)
 software to perform their work, and they are interested in reducing
-costs and makin their employees' lobs easier, but they don't care
+costs and making their employees' jobs easier, but they don't care
 about software; they want modern tools, but they don't want to break
 their current processes that work. The presenter discussed his
 company's approach to addressing the concerns of his commercial
@@ -711,10 +711,10 @@ well.
 
 Enthought provides the tools to do this in the Canopy
 project. Specifically, the CanopyGeo product, which was developed for
-a geophysical customer. The geophyics solver in CanopyGeo can easily
+a geophysical customer. The geophysics solver in CanopyGeo can easily
 be stripped out and replaced by another physics solver while keeping
-the outside system intact. This allows a high-performace system to be
-constucted that can handle large amounts of data efficiently (datasets
+the outside system intact. This allows a high-performance system to be
+constructed that can handle large amounts of data efficiently (datasets
 in CanopyGeo can be &gt;1 TB).
 
 ### Out with the Old and in with the New: Embedding Python in Old Fortran HPC Code \[HPC\]
@@ -728,7 +728,7 @@ in CanopyGeo can be &gt;1 TB).
 > override or replace portions of the Fortran source code with Python,
 > to enable rapid development of new algorithms and methods.
 
-- Compared writing "Hello, world!" in Python, F77, C, nd Cython
+- Compared writing "Hello, world!" in Python, F77, C, and Cython
 - Showed how they can all call each other
 - Motivation was to have students write new code in Python, and
   embedding that code in the legacy Fortran code
@@ -782,7 +782,7 @@ in CanopyGeo can be &gt;1 TB).
 > which has grown into a thriving community with openness and
 > reproducibility at its core. conda-forge is a medley of
 > technologies, including CI automation, Heroku, gitpython, pygithub,
-> requests, github webhooks, conda\[-build\[-all\]\] and Docker. I
+> requests, GitHub webhooks, conda\[-build\[-all\]\] and Docker. I
 > will present just some of the infrastructure which has been
 > developed in order to support conda-forge's one package to one
 > repository approach, and will demonstrate how you too can help with
@@ -799,24 +799,24 @@ conda through a command called "conda-build-all." The presenter
 created the "conda-recipes-scitools" repository to store the recipes
 used by conda-build-all. Others followed suit, including
 ioos/conda-build and Bioconda. As usage increased, the presenter
-proposed the idea of creating a Github community where each repository
+proposed the idea of creating a GitHub community where each repository
 contained only one recipe (called a "feedstock"). That community is called
 "conda-forge."
 
 The presenter has recently written the "conda-smithy" tool that
-creates a recipe from a feedstock template and creates the Github
+creates a recipe from a feedstock template and creates the GitHub
 repository for the recipe in conda-forge. Anyone can add a new recipe,
-and there is an automated system in place using Github hooks that
+and there is an automated system in place using GitHub hooks that
 enables this configuration control. Recent additions include a linter
 for checking recipe standards. Plans include releasing an installer
 for speeding up the build process.
 
-### GT-Py: Accelerating NumPy programs on CPU & GPU with Minimal Programming Effort \[General\]
+### GT-Py: Accelerating Numpy programs on CPU & GPU with Minimal Programming Effort \[General\]
 
 (Chi-keung Luk, Intel)
 
 > GT-Py is a newly developed just-in-time compiler that can offload
-> NumPy code to hardware accelerators with relatively little
+> Numpy code to hardware accelerators with relatively little
 > programming effort. It lets programmers add pragmas to a Python
 > program to specify what need to be offloaded, without writing the
 > actual offloading code. By generating OpenCL code, GT-Py can run on
@@ -824,17 +824,17 @@ for speeding up the build process.
 > multicore CPUs, and potentially FPGAs. Experimental results
 > demonstrate that significant performance gains, as much as over
 > 9000x faster than the Python interpreter execution, can be obtained
-> by adding only a couple of pragmas to the NumPy program. GT-Py
+> by adding only a couple of pragmas to the Numpy program. GT-Py
 > supports both Python 2.7 and Python 3.4+. It will be available to
 > public use for free.
 
 The speaker presented an alternative to Numba/Dask for GPU
 programming, specifically for Intel GPUs. He first summarized the
-existing methods of improfing performance of Python code, which
+existing methods of improving performance of Python code, which
 include compile-time optimization (Cython), JIT optimization (Numba),
 and manually writing GPU code using Python wrappers (PyCUDA and
 PyOpenCL). For GPU programming, it is difficult and intrusive to
-insert into existing code, and requries special knowledge of GPU
+insert into existing code, and requires special knowledge of GPU
 programming and the specific hardware on which the code will be run.
 
 GT-Py was written by Intel to specifically address this issue for
@@ -842,7 +842,7 @@ Intel GPUs. GT-Py uses `pragma`s similar to OpenMP to mark GPU
 sections of code that will be executed on the GPU. the `pragma`s can
 be used to target optimization for CPUs as well, both serially and in
 parallel. At this time, GT-Py provides `pragma`s for looping and
-vectorization, and `pragma`s to replace some common standart library
+vectorization, and `pragma`s to replace some common standard library
 functions as well. The speaker showed *significant* performance
 increase (2&ndash;10,000x speedup) even on multi-core CPUs. The first
 public release of GT-Py is scheduled for the fall, and will support
@@ -861,7 +861,7 @@ Intel Xeon Phi and Altera FPGA GPUs in the future.
 > demonstrate how the HoloViews library lets you wrap datasets of any
 > complexity and size, making the data instantly visualizable in
 > Jupyter Notebooks to allow interactive exploration via widgets and
-> various plotting backends including matplotlib and bokeh.
+> various plotting backends including Matplotlib and Bokeh.
 
 The presenters lamented that, although most Python visualization
 packages generate very nice visualizations, their interfaces require
@@ -946,13 +946,13 @@ At this time, JupyterLab has been released in an alpha version. The
 developers hope to have a major release before the SciPy 2017
 conference.
 
-### Lightning Talks (youtube)
+### Lightning Talks (YouTube)
 
 This session consisted of many short presentations on a variety of
 topics, some of which are listed below:
 
 - DataLore from JetBrains: cloud-based interactive data processing;
-  conda and Github integration; live interactive editing; in private
+  conda and GitHub integration; live interactive editing; in private
   beta right now
 - Virtual Core from Enthought: interactive volumetric plotting with
   Mayavi
@@ -990,13 +990,13 @@ California, Berkeley)
 > demographic makeup based on their user essays, and we conclude by
 > sharing some unexpected insights into deception.
 
-The presenters were interested in analyzing the ways prople present
+The presenters were interested in analyzing the ways people present
 themselves in an online dating context. They looked at both chosen
 characteristics (like gender, age, and drug use) and "essay" input,
 which involved tokenizing general text and looking for keywords. They
 analyzed the essay data based on both lexical analysis and semantic
 analysis, which looks for meanings not just words. This presentation
-only focused on the semantic anaysis.
+only focused on the semantic analysis.
 
 The presenters used the TF-IDF (term frequency–inverse document
 frequency) metric to convert from a word-space to a number-space,
@@ -1030,7 +1030,7 @@ identify as drug users wrote in a way very similar to drug users.
 
 The presenter is the lead developer of the Numba package at Continuum
 Analytics. His presentation addressed "scaling up," which he defined
-as adding CPUs and GPUs on a single macine using tools such as Cython,
+as adding CPUs and GPUs on a single machine using tools such as Cython,
 CUDA, and OpenCL, and "scaling out," which he defined as analogous to
 distributed computing using tools such as MPI, Hadoop, and Spark.
 
@@ -1039,8 +1039,8 @@ Numba, which is a Python package that translates Python code to
 machine code at runtime (JIT optimization), for both CPU and GPU
 applications. This is done by providing a set of decorators to
 indicate which functions to translate and the architectures for which
-to compile the code. It also proides a vectorization decorator to
-vectorize Numpy universal functions (`ufunc`s). Helper functions also
+to compile the code. It also provides a vectorization decorator to
+vectorized Numpy universal functions (`ufunc`s). Helper functions also
 exist in Numba to assist in programming details that are specific to
 GPUs.
 
@@ -1078,7 +1078,7 @@ systems.
 > and does not require any explicit tensor transposition or additional
 > workspace, while also incorporating multithreading at several
 > levels. These traits make our implementation ideal for layering
-> underneath higher-level interfaces such as NumPy.
+> underneath higher-level interfaces such as Numpy.
 
 The speaker presented a brief overview of a BLAS (Basic Linear Algebra
 Subsystem), and lamented that, although tensor operations are very
@@ -1131,7 +1131,7 @@ for Data Science)
 > performance computing community to seriously consider building
 > complicated computational applications at large scale with Python.
 
-The presenter works in the astrophysis field and needs to perform
+The presenter works in the astrophysics field and needs to perform
 large matrix operations on large datasets. Unfortunately modern
 systems such as Hadoop or Spark aren't good at this, but traditional
 HPCs are. However, much of his work is migrating to Python and he is
@@ -1160,7 +1160,7 @@ Thilina Rathnayake, and Abhinav Agarwal, Indian Institute of
 Technology-Kharagpur)
 
 > The goal of SymEngine https://github.com/symengine/symengine is to
-> be the fastest C++ symbolic manipulation library (PpenSource or
+> be the fastest C++ symbolic manipulation library (OpenSource or
 > commercial), compatible with SymPy, that can be used from many
 > languages (Python, Ruby, Julia, etc.). We will present the current
 > status of development, how things are implemented internally, why we
@@ -1172,7 +1172,7 @@ Technology-Kharagpur)
   and Haskell
 - Goal was to be fastest library, and serve as core for SymPy
 - SymPy can be slow for large expressions
-- explored many options to improve performace, but eventually chose
+- explored many options to improve performance, but eventually chose
   C++
 - demoed in pyhon, rupy, and julia, all using jupyter notebooks with
   different backends
@@ -1212,7 +1212,7 @@ Technology-Kharagpur)
 - images are stored as base-64 blobs
 - diffs are readable, but can be unwieldy
 - this is very hard to use with git
-- github now has notebook rendering!, but not for diffs
+- GitHub now has notebook rendering!, but not for diffs
 - difftools view test files as simply lines and have no understanding
   of the file's ontent
 - can currently use nbconvert to convert to md, which is better, but
@@ -1236,9 +1236,9 @@ Technology-Kharagpur)
   ocome
 - will eventually splt output into a different file for
   gitignore-ability
-- once html view is good, will talk to github
+- once html view is good, will talk to GitHub
 
-### Lightning Talks (youtube)
+### Lightning Talks (YouTube)
 
 This session consisted of many short presentations on a variety of
 topics, some of which are listed below:
@@ -1309,14 +1309,14 @@ Matplotlib BoF (Thursday)
   - Traitlets: will allow export to multiple formats (altair
     integration)
 
-Jupytr BoF (Friday)
+Jupyter BoF (Friday)
 -------------------
 
 - Around the room with introductions and interests
 - Dediated to improving stability for future extensions
 - Will make better distinction between public stable APIs and
   non-public APIs
-- open to communication wth users via github
+- open to communication wth users via GitHub
 - very open to working with new people to develop new capabilities in
   ipython and jupyterlab
 - Notes on [Google Docs](http://tinyurl.com/jupyter-bof-2016)
@@ -1332,7 +1332,7 @@ Conclusions
   - Extract classified and sensitive (i.e., export controlled) code
     out of system (TRANSX and Bengal)
   - Have internal repo as primary; periodically (patch releases?) push
-    updates to Github. Fetch updates from Github whenever a pull
+    updates to GitHub. Fetch updates from GitHub whenever a pull
     request is approved, or daily.
   - Justification: collaboration among peers at other labs, easier
     integration with other scientific packages, presentation to
@@ -1342,10 +1342,10 @@ Conclusions
   - Contributions possible remotely by NNL Lynx developers
   - Concerns:
 	- Classification: review of all code by ADC before release
-	- Information Security: blanket PU approval with manager signoff?
+	- Information Security: blanket PU approval with manager sign-off?
 	- Legal/Licensing: ??? (talk to lawyer)
 	- Others?
 - Convert to Anaconda for management of software stack
 - All presentations are available on
-  [Enthought's YouTube channel](https://www.youtube.com/playlist?list=PLYx7XA2nY5Gf37zYZMw6OqGFRPjB1jCy6).
+  [Enthought YouTube channel](https://www.youtube.com/playlist?list=PLYx7XA2nY5Gf37zYZMw6OqGFRPjB1jCy6).
 - Spark
