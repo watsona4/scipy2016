@@ -1431,7 +1431,7 @@ participating in all aspects of the conference: tutorials,
 presentations, BoFs and Sprints, and should give presentations when
 appropriate.
 
-All presentations are freely-provided to the public on the
+All presentations are freely provided to the public on the
 [Enthought YouTube channel](https://www.youtube.com/playlist?list=PLYx7XA2nY5Gf37zYZMw6OqGFRPjB1jCy6). The
 presentations discussed in this trip report are available internally
 and accessible from the Lynx website.
