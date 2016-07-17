@@ -971,7 +971,7 @@ California, Berkeley)
 
 The presenters were interested in analyzing the ways people present
 themselves in an online dating context. They looked at both chosen
-characteristics (like gender, age and self-identiied illicit drug
+characteristics (like gender, age and self-identified illicit drug
 use) and "essay" input, which involved tokenizing general text and
 looking for keywords. They analyzed the essay data based on both
 lexical analysis and semantic analysis, which looks for meanings not
@@ -1148,7 +1148,7 @@ complicated expressions, so he wrote a library in C++, called
 SymEngine, that performs the bulk of the work for expression
 simplification, with thin wrappers for Python, Ruby, Julia and
 Haskell. His goal was to be fastest symbolic manipulation library, and
-serve as core for SymPy. In developing ths library, the presenter
+serve as core for SymPy. In developing this library, the presenter
 explored many options to improve performance, but eventually chose
 C++. He demonstrated the tool in Python, Ruby and Julia, all using
 Jupyter Notebooks with different back-ends.
@@ -1160,7 +1160,7 @@ SymEngine. The library uses the Trilinos Teuchos library for
 reference-counted pointers to prevent memory leaks. He showed
 benchmarks against GiNaC, SymPy, *Mathematica* and Maple. The results
 showed that SymEngine is not as fast as Maple for polynomials, but
-faster for more complex operations; it was signuficantly faster than
+faster for more complex operations; it was significantly faster than
 *Mathematica* for all benchmarks, and faster than the pure-Python
 implementation in SymPy by about 30×.
 
